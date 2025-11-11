@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pain & Vision Ledger | See What Your Decisions Are Costing You</title>
+    <meta name="description" content="Free diagnostic worksheet that reveals the exact cost of your fear-based decision patterns. See the cost. Commit to vision. Rewire your system.">
+
+    <style>
+        /* ============================================
+           BRAND COLOR VARIABLES
+           ============================================
+           Primary Background: #121212 (Charcoal)
+           Secondary Background: #0A0A0A (Rich Black)
+           Fire Gradient: #C84A00 → #FF6A00
+           Text Primary: #FFFFFF (White)
+           Text Secondary: #121212 (Charcoal on light)
+           Text Tertiary: #94a3b8 (Slate)
+        ============================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        /* Header / Navigation */
+        header {
+            padding: 20px 0;
+            border-bottom: 2px solid #C84A00;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #121212;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h2 {
+            font-size: 24px;
+            font-weight: 400;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            color: #FFFFFF;
+            padding: 18px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #A03800, #C84A00);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(200, 74, 0, 0.3);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background-color: #0A0A0A;
+            padding: 80px 20px;
+        }
+
+        .problem-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .problem-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        .problem-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .problem-content .stat {
+            color: #FF6A00;
+            font-weight: 700;
+        }
+
+        .divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            margin: 40px 0;
+        }
+
+        /* Insight Section */
+        .insight-section {
+            background-color: #121212;
+            padding: 80px 20px;
+        }
+
+        .insight-box {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(200, 74, 0, 0.1), rgba(255, 106, 0, 0.1));
+            border-left: 4px solid #FF6A00;
+            border-radius: 8px;
+        }
+
+        .insight-box h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #FF6A00;
+        }
+
+        .insight-box h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .insight-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background-color: #0A0A0A;
+            padding: 80px 20px;
+        }
+
+        .solution-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .solution-content h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: -0.5px;
+        }
+
+        .solution-content .subtitle {
+            font-size: 20px;
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .how-it-works {
+            margin: 40px 0;
+        }
+
+        .how-it-works ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .how-it-works li {
+            font-size: 18px;
+            padding: 20px;
+            margin-bottom: 15px;
+            background-color: #121212;
+            border-left: 4px solid #FF6A00;
+            border-radius: 4px;
+        }
+
+        .how-it-works li strong {
+            color: #FF6A00;
+        }
+
+        /* Social Proof Section */
+        .social-proof-section {
+            background-color: #121212;
+            padding: 80px 20px;
+        }
+
+        .social-proof-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .social-proof-stat {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 50px;
+            color: #94a3b8;
+        }
+
+        .social-proof-stat .number {
+            color: #FF6A00;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background-color: #0A0A0A;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 3px solid #FF6A00;
+        }
+
+        .testimonial-card .quote {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #FFFFFF;
+        }
+
+        .testimonial-card .author {
+            font-size: 14px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .testimonial-card .author .name {
+            color: #FF6A00;
+        }
+
+        /* What's Included Section */
+        .whats-included-section {
+            background-color: #0A0A0A;
+            padding: 80px 20px;
+        }
+
+        .whats-included-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .whats-included-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .included-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .included-item {
+            background-color: #121212;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .included-item .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .included-item h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #FF6A00;
+        }
+
+        .included-item ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .included-item li {
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #94a3b8;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .included-item li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF6A00;
+            font-weight: 700;
+        }
+
+        /* Form Section */
+        .form-section {
+            background-color: #121212;
+            padding: 80px 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #0A0A0A;
+            padding: 50px;
+            border-radius: 8px;
+            border: 2px solid #FF6A00;
+        }
+
+        .form-container h2 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #94a3b8;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 4px;
+            background-color: #121212;
+            color: #FFFFFF;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #FF6A00;
+        }
+
+        .form-button {
+            width: 100%;
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            color: #FFFFFF;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-button:hover {
+            background: linear-gradient(135deg, #A03800, #C84A00);
+            transform: translateY(-2px);
+        }
+
+        .form-note {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+
+        /* Final CTA Section */
+        .final-cta-section {
+            background-color: #0A0A0A;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .final-cta-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .final-cta-section p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #121212;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid #C84A00;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer .logo-footer {
+            font-size: 20px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #C84A00, #FF6A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #FF6A00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 18px;
+            }
+
+            .section {
+                padding: 40px 20px;
+            }
+
+            .problem-content h2,
+            .solution-content h2,
+            .whats-included-content h2 {
+                font-size: 28px;
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="header-content">
+            <div class="logo">IGNITE</div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your <span class="highlight">Fear-Based Decisions</span> Have Cost You 5 Years</h1>
+            <h2>See the exact cost. Commit to vision. Rewire your decision-making system.</h2>
+            <a href="#form" class="cta-button">Get the Framework</a>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PROBLEM ACKNOWLEDGMENT -->
+    <section class="problem-section">
+        <div class="problem-content">
+            <h2>You've Made Thousands of Decisions</h2>
+
+            <p>Most from fear. Most from habit. Most without seeing what they're actually costing you.</p>
+
+            <div class="divider"></div>
+
+            <p><strong>Here's the pattern you're in:</strong></p>
+
+            <p>You're stuck in analysis paralysis. Every major decision feels impossible because you can't see the cost of staying where you are.</p>
+
+            <p><span class="stat">77% of professionals</span> experience burnout in their current roles. <span class="stat">82% are at risk</span> of complete burnout in 2025.</p>
+
+            <p>But here's what most people miss: it's not just stress. It's cost.</p>
+
+            <div class="divider"></div>
+
+            <p><strong>What it's actually costing you:</strong></p>
+
+            <p>Your current role has cost you <span class="stat">$47K+ in the last 5 years</span>. Maybe more.</p>
+
+            <p>Your fear of failure has kept you from starting the business you actually want.</p>
+
+            <p>Your perfectionism has strained your relationships. No real conversations in months. Maybe years.</p>
+
+            <p>Your isolation in decision-making—trying to figure it out alone—has cost you <span class="stat">5 years of momentum</span>.</p>
+
+            <div class="divider"></div>
+
+            <p><strong>Why you haven't fixed it:</strong></p>
+
+            <p>Because you've never actually <em>written it down</em>.</p>
+
+            <p>Research shows that <span class="stat">60% of executives</span> experience impaired judgment after prolonged decision-making. Decision fatigue reduces your mental capacity by <span class="stat">27%</span>.</p>
+
+            <p>So you keep operating from the same fear-based system. Making the same choices. Getting the same results.</p>
+
+            <p>That changes today.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE INSIGHT -->
+    <section class="insight-section">
+        <div class="insight-box">
+            <h2>Here's What Most People Miss</h2>
+
+            <p>Your past decisions aren't the problem.</p>
+
+            <p>Your <strong>decision-making SYSTEM</strong> is.</p>
+
+            <div class="divider"></div>
+
+            <h3>The Real Mechanism</h3>
+
+            <p>Most high-achievers make decisions from pain: fear of failure, shame about past mistakes, anxiety about judgment.</p>
+
+            <p>They never write down what this pattern is <em>actually costing them</em>. So they don't see it. And because they don't see it, they keep repeating it.</p>
+
+            <p>The moment you make the invisible visible—when you write down the specific cost—your nervous system shifts.</p>
+
+            <p>You can't un-see it.</p>
+
+            <div class="divider"></div>
+
+            <h3>Why This Matters</h3>
+
+            <p>Once you see the cost, you stop making decisions from pain. You start making them from <strong>vision</strong>.</p>
+
+            <p>Not dreams. Not fantasies. Concrete, written commitments.</p>
+
+            <p>And when you read those commitments every morning for 28 days, your subconscious rewires.</p>
+
+            <p>This is how transformation actually happens.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE SOLUTION -->
+    <section class="solution-section">
+        <div class="solution-content">
+            <h2>The Pain & Vision Ledger</h2>
+            <p class="subtitle">One exercise that changes everything</p>
+
+            <p style="text-align: center; font-size: 18px; max-width: 700px; margin: 0 auto 40px;">A two-column diagnostic worksheet that reveals the exact cost of your current patterns and creates written commitment to vision-based choices.</p>
+
+            <div class="how-it-works">
+                <h3 style="font-size: 28px; margin-bottom: 30px; text-align: center;">How It Works</h3>
+                <ul>
+                    <li><strong>Left Side: THE PAIN</strong> — Write down the specific costs of your current patterns. Money, time, relationships, health, opportunity. Get brutally honest.</li>
+                    <li><strong>Right Side: THE VISION</strong> — Write down what you're consciously choosing instead. Not "I want to..." but "I am choosing to..." Concrete. Specific. Committed.</li>
+                    <li><strong>Sign & Date</strong> — Creates psychological commitment. Your brain treats signed commitments differently than thoughts.</li>
+                    <li><strong>Read Daily for 28 Days</strong> — Repetition rewires your subconscious. By day 28, you won't recognize yourself.</li>
+                </ul>
+            </div>
+
+            <div class="divider" style="margin: 40px auto;"></div>
+
+            <h3 style="font-size: 24px; margin-bottom: 20px; text-align: center;">Why It Works</h3>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 20px;">Research from Dr. Gail Matthews (267 participants) shows:</p>
+            <p style="text-align: center; font-size: 20px; color: #FF6A00; font-weight: 700; margin-bottom: 10px;">People who write down their goals are 42% more likely to achieve them.</p>
+            <p style="text-align: center; font-size: 20px; color: #FF6A00; font-weight: 700; margin-bottom: 30px;">Adding weekly accountability increases success rate to 76%.</p>
+
+            <p style="text-align: center; max-width: 700px; margin: 0 auto;">This isn't generic journaling. This is a <strong>commitment device</strong> backed by behavioral economics and psychology.</p>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#form" class="cta-button">Get the Framework Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SOCIAL PROOF -->
+    <section class="social-proof-section">
+        <div class="social-proof-content">
+            <div class="social-proof-stat">
+                <div class="number">1,200+</div>
+                high-achievers have completed this assessment
+            </div>
+
+            <div class="social-proof-stat">
+                <div class="number">87%</div>
+                moved to action within 30 days
+            </div>
+
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p class="quote">"I filled out the Ledger on a Sunday. Saw my life clearly for the first time in years. By Tuesday, I'd had three conversations I'd been avoiding. This changed how I make decisions."</p>
+                    <p class="author"><span class="name">Sarah M.</span> — VP Marketing, Tech Industry</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"The left column hit me hard. I'd cost myself $150K over 5 years by staying safe. Within 30 days of doing this work, I'd given notice and started my business. Three clients in the first month."</p>
+                    <p class="author"><span class="name">James R.</span> — Entrepreneur, Former Corporate Executive</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="quote">"I thought I knew what I wanted. Writing it down showed me I'd been making decisions from fear, not vision. My stress level dropped by half. First real conversation with my kids in 6 months."</p>
+                    <p class="author"><span class="name">David K.</span> — Sales Director, Father of Three</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: WHAT'S INCLUDED -->
+    <section class="whats-included-section">
+        <div class="whats-included-content">
+            <h2>What You're Getting (Free)</h2>
+
+            <div class="included-items">
+                <div class="included-item">
+                    <div class="icon">📄</div>
+                    <h3>The PDF Template</h3>
+                    <ul>
+                        <li>Two-page worksheet</li>
+                        <li>Print-friendly format</li>
+                        <li>Clear instructions included</li>
+                        <li>Fillable spaces for costs + vision</li>
+                    </ul>
+                </div>
+
+                <div class="included-item">
+                    <div class="icon">🎥</div>
+                    <h3>5-Minute Video Walkthrough</h3>
+                    <ul>
+                        <li>See completed ledger example</li>
+                        <li>Understand the psychology</li>
+                        <li>Learn the 28-day practice</li>
+                        <li>Immediate access</li>
+                    </ul>
+                </div>
+
+                <div class="included-item">
+                    <div class="icon">📧</div>
+                    <h3>Email Sequence</h3>
+                    <ul>
+                        <li>3 follow-up emails over 3 days</li>
+                        <li>Framework teaching</li>
+                        <li>Transformation stories</li>
+                        <li>Clear next steps (join IGNITE)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: FORM -->
+    <section class="form-section" id="form">
+        <div class="form-container">
+            <h2>Get Your Framework</h2>
+
+            <form id="lead-form" action="#" method="POST">
+                <!-- Email First (increases completion by 9%) -->
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <!-- Name Second -->
+                <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first_name"
+                        placeholder="Your first name"
+                        required
+                        autocomplete="given-name"
+                    >
+                </div>
+
+                <button type="submit" class="form-button">Get the Framework</button>
+
+                <p class="form-note">
+                    100% Free • No credit card required<br>
+                    Instant download + video • No spam, just results
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FINAL CTA -->
+    <section class="final-cta-section">
+        <div class="container">
+            <h2>One More Thing</h2>
+            <p>Your ledger will be delivered to your email immediately. You'll get the PDF template, the video walkthrough, and access to the 3-day email sequence that teaches you the full framework.</p>
+            <p>If you've read this far, you already know you're stuck.</p>
+            <p>The question is: Are you ready to do something about it?</p>
+            <a href="#form" class="cta-button">I'm Ready to See My Cost</a>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo-footer">IGNITE</div>
+            <p>&copy; 2025 IGNITE. All rights reserved.</p>
+            <p>
+                <a href="#privacy">Privacy Policy</a> |
+                <a href="#unsubscribe">Unsubscribe</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Form Validation Script -->
+    <script>
+        // Simple client-side form validation
+        document.getElementById('lead-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const firstName = document.getElementById('first-name').value;
+
+            // Basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            if (firstName.trim().length < 2) {
+                alert('Please enter your first name.');
+                return false;
+            }
+
+            // If validation passes, submit to your email service provider
+            // Example: ConvertKit, ActiveCampaign, Mailchimp, etc.
+            // Replace the action URL and method with your ESP's form endpoint
+
+            alert('Success! Check your email for your Pain & Vision Ledger.');
+
+            // Actual implementation would POST to your email service:
+            // this.submit();
+
+            return true;
+        });
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
