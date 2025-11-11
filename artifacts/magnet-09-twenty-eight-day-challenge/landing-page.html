@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 Days To Transform Your Decisions | IGNITE Challenge</title>
+    <meta name="description" content="Experience the full IGNITE program in 28 daily lessons. See what's possible when you stop settling and start transforming. Free email course.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2C3539;
+            line-height: 1.6;
+            background: #FFFFFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #2C3539;
+            color: #FFFFFF;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #2C3539 0%, #1a2024 100%);
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .hero h1 span {
+            color: #FF4D00;
+        }
+
+        .subheadline {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            color: #FFFFFF;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #FF4D00;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 18px 48px;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 77, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #e64500;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 77, 0, 0.4);
+        }
+
+        .social-proof {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* What You'll Get Section */
+        .what-you-get {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #2C3539;
+        }
+
+        .section-title span {
+            color: #FF4D00;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            padding: 30px;
+            background: #F9F9F9;
+            border-radius: 8px;
+            border-left: 4px solid #FF4D00;
+        }
+
+        .benefit-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2C3539;
+        }
+
+        .benefit-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2C3539;
+        }
+
+        /* Week Breakdown */
+        .week-breakdown {
+            padding: 80px 20px;
+            background: #2C3539;
+            color: #FFFFFF;
+        }
+
+        .week-breakdown .section-title {
+            color: #FFFFFF;
+        }
+
+        .weeks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .week-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 3px solid #FF4D00;
+        }
+
+        .week-number {
+            font-size: 14px;
+            font-weight: 700;
+            color: #FF4D00;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .week-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #FFFFFF;
+        }
+
+        .week-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .week-card li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #FFFFFF;
+            opacity: 0.9;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .week-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #FF4D00;
+            font-weight: 700;
+        }
+
+        /* Social Proof */
+        .social-proof-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            padding: 30px;
+            background: #F9F9F9;
+            border-radius: 8px;
+            border-left: 4px solid #FF4D00;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2C3539;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            font-weight: 600;
+            color: #FF4D00;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 20px;
+            background: #FF4D00;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #FFFFFF;
+            opacity: 0.95;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2C3539;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            border: 2px solid #E0E0E0;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #FF4D00;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: #2C3539;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #1a2024;
+        }
+
+        .privacy-note {
+            font-size: 12px;
+            color: #2C3539;
+            margin-top: 15px;
+            opacity: 0.7;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2C3539;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2C3539;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 20px;
+            background: #2C3539;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subheadline {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .what-you-get,
+            .week-breakdown,
+            .social-proof-section,
+            .cta-section,
+            .faq-section {
+                padding: 60px 20px;
+            }
+
+            .benefits-grid,
+            .weeks-container,
+            .testimonials {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .form-container {
+                padding: 30px 20px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>28 Days To Transform Your <span>Decisions</span></h1>
+            <p class="subheadline">Experience the full IGNITE program in 28 daily lessons. See what's possible.</p>
+            <a href="#signup" class="cta-button">START THE 28-DAY CHALLENGE</a>
+            <p class="social-proof">Join 4,500+ high-achievers transforming their lives through IGNITE</p>
+        </div>
+    </section>
+
+    <!-- What You'll Get -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2 class="section-title">What You'll Get Over <span>28 Days</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Day 1: Full Deep-Dive</h3>
+                    <p>Start with a complete lesson on the Pain & Vision Ledger—the foundation of every transformation. Comprehensive teaching, not teaser content.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Days 2-28: Daily Lessons</h3>
+                    <p>Every day, receive one powerful lesson from the IGNITE curriculum. Each email delivers a key insight you can apply immediately.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Complete Methodology</h3>
+                    <p>Experience the full IGNITE framework: from identifying your stuck pattern to creating your 90-day action plan.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>No Fluff, All Action</h3>
+                    <p>Every email is direct, actionable, and designed to move you forward. No corporate jargon. No empty motivation. Real transformation.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Build Your Foundation</h3>
+                    <p>By day 28, you'll have mapped your archetype, defined your mandates, discovered your why, and built your discipline blueprint.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Know What's Possible</h3>
+                    <p>See exactly what the full IGNITE program delivers—and decide if you're ready to commit to daily implementation with coaching and community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Week Breakdown -->
+    <section class="week-breakdown">
+        <div class="container">
+            <h2 class="section-title">What Each Week Covers</h2>
+            <div class="weeks-container">
+                <div class="week-card">
+                    <div class="week-number">Week 1: Foundation</div>
+                    <h3>Days 1-7</h3>
+                    <ul>
+                        <li>Pain & Vision Ledger</li>
+                        <li>Archetype Quiz</li>
+                        <li>No-Excuses Mandate</li>
+                        <li>Commitment Protocol</li>
+                        <li>Pattern Recognition</li>
+                        <li>Identity Mapping</li>
+                        <li>Week 1 Integration</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <div class="week-number">Week 2: Deep Work</div>
+                    <h3>Days 8-14</h3>
+                    <ul>
+                        <li>7 Levels of Why</li>
+                        <li>Belief System Audit</li>
+                        <li>Fear Inventory</li>
+                        <li>Money Mindset</li>
+                        <li>Time Audit</li>
+                        <li>Energy Management</li>
+                        <li>Midpoint Check-In</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <div class="week-number">Week 3: Implementation</div>
+                    <h3>Days 15-21</h3>
+                    <ul>
+                        <li>Identity Statement</li>
+                        <li>Redemptive Reframe</li>
+                        <li>Daily Discipline Blueprint</li>
+                        <li>Morning Ritual Design</li>
+                        <li>Accountability Systems</li>
+                        <li>Progress Tracking</li>
+                        <li>Week 3 Momentum</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <div class="week-number">Week 4: Integration</div>
+                    <h3>Days 22-28</h3>
+                    <ul>
+                        <li>90-Day Action Plan</li>
+                        <li>Decision Matrix</li>
+                        <li>Support System Build</li>
+                        <li>Obstacle Planning</li>
+                        <li>Success Metrics</li>
+                        <li>Next Level Vision</li>
+                        <li>Your Next Move</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof-section">
+        <div class="container">
+            <h2 class="section-title">What <span>Challenge Completers</span> Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"I've been stuck in corporate for 12 years. After the 28-day challenge, I finally saw my pattern: I'm an Inherited-Identity Prisoner. That clarity alone was worth everything. Day 16, I submitted my resignation."</p>
+                    <p class="testimonial-author">— Marcus T., Former VP of Sales</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"Day 1 destroyed me—in the best way. I'd never written down my pain points so honestly. By Day 28, I had a complete roadmap. Three weeks later, I enrolled in IGNITE. Best decision I've ever made."</p>
+                    <p class="testimonial-author">— Jennifer K., Entrepreneur</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"I thought it would be generic daily tips. It wasn't. Every email hit hard. The 7 Levels of Why on Day 8 made me cry. By the end, I knew exactly what I needed to do—and I did it."</p>
+                    <p class="testimonial-author">— David R., 1099 Contractor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Form Section -->
+    <section class="cta-section" id="signup">
+        <div class="container">
+            <h2>Ready To See What's Possible?</h2>
+            <p>Start the 28-day challenge. No cost. No catch. Just transformation.</p>
+            <div class="form-container">
+                <form action="[YOUR_EMAIL_PROVIDER_ENDPOINT]" method="POST">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="form-submit">START MY 28-DAY CHALLENGE</button>
+                    <p class="privacy-note">We respect your privacy. Unsubscribe at any time. By signing up, you agree to receive daily emails for 28 days.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3 class="faq-question">Will I get sold to?</h3>
+                    <p class="faq-answer">Yes. But not on Day 1. The challenge exists to preview the full IGNITE program. After you experience 28 days of lessons, you'll have the option to enroll in IGNITE for $99/month with daily coaching, accountability, and community. If it's not for you, that's fine. The 28 days alone will transform how you see your decisions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is this really free?</h3>
+                    <p class="faq-answer">Completely free. No credit card required. No hidden costs. You'll receive 28 daily emails with full IGNITE lessons. That's it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if I miss a day?</h3>
+                    <p class="faq-answer">Emails arrive daily at 10 AM your local time. If you miss one, it's still in your inbox. Catch up when you can. This isn't about perfection—it's about progress.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How much time does this take daily?</h3>
+                    <p class="faq-answer">Day 1 is a deep-dive (20-30 minutes to read and reflect). Days 2-28 are short lessons (3-5 minutes to read). Some days include optional exercises that take 10-15 minutes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Who is this for?</h3>
+                    <p class="faq-answer">W2 employees stuck in corporate. 1099 contractors wanting more. Emerging entrepreneurs building something real. Anyone who's tired of settling and ready to see what's actually possible.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can I unsubscribe?</h3>
+                    <p class="faq-answer">Anytime. Every email has an unsubscribe link. No hard feelings. But most people who start, finish. The content is that good.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What's IGNITE?</h3>
+                    <p class="faq-answer">IGNITE is a $99/month personal transformation program for high-achievers who want to break free from limiting beliefs and build real wealth and freedom. This 28-day challenge is a complete preview of the methodology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IGNITE Personal Transformation. All rights reserved.</p>
+            <p>Stop making excuses. Start making progress.</p>
+        </div>
+    </footer>
+
+    <!-- Tracking Scripts -->
+    <script>
+        // Add your tracking pixels here (Facebook, Google Analytics, etc.)
+        // Example: Facebook Pixel
+        // !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        // n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        // n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        // t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        // document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        // fbq('init', 'YOUR_PIXEL_ID');
+        // fbq('track', 'PageView');
+
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission tracking
+        document.querySelector('form').addEventListener('submit', function(e) {
+            // Add your form submission tracking here
+            // Example: fbq('track', 'Lead');
+            // Example: gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID'});
+        });
+    </script>
+</body>
+</html>
