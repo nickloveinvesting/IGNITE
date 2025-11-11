@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform from stuck to power in 3 days. Email 1: See your pattern. Email 2: Understand why. Email 3: Start unstuck.">
+    <title>The Pain to Power Decoder | 3-Day Transformation Sequence</title>
+
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           BRAND COLORS - IGNITE Lead Magnet #10
+           ═══════════════════════════════════════════════════════════════
+           Primary Background: #121212 (Charcoal)
+           Secondary Background: #0A0A0A (Rich Black)
+           Fire Gradient: #C84A00 → #FF6A00
+           Text Primary: #FFFFFF (White)
+           Text Secondary: #121212 (Charcoal)
+           Text Tertiary: #94a3b8 (Slate)
+           Button Hover: #A03800
+           ═══════════════════════════════════════════════════════════════ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.25px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Fire Gradient Accent Line */
+        .accent-line {
+            height: 4px;
+            background: linear-gradient(90deg, #C84A00 0%, #FF6A00 100%);
+            width: 100%;
+        }
+
+        /* Header */
+        header {
+            padding: 20px 0;
+            background-color: #0A0A0A;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-align: right;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #121212;
+        }
+
+        .hero h1 {
+            max-width: 800px;
+            margin: 0 auto 24px;
+        }
+
+        .hero .subheadline {
+            font-size: 20px;
+            font-weight: 400;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.5;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #C84A00 0%, #FF6A00 100%);
+            color: #FFFFFF;
+            padding: 18px 48px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(255, 106, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, #A03800 0%, #C84A00 100%);
+            box-shadow: 0 6px 30px rgba(255, 106, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Pain Section */
+        .pain-section {
+            padding: 80px 20px;
+            background-color: #0A0A0A;
+        }
+
+        .pain-section .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pain-section p {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .pain-points {
+            margin: 40px 0;
+        }
+
+        .pain-point {
+            background-color: #121212;
+            padding: 24px;
+            margin-bottom: 16px;
+            border-left: 4px solid #FF6A00;
+            border-radius: 4px;
+        }
+
+        .pain-point strong {
+            color: #FF6A00;
+        }
+
+        /* Journey Section (3-Part Breakdown) */
+        .journey-section {
+            padding: 80px 20px;
+            background-color: #121212;
+            text-align: center;
+        }
+
+        .journey-section h2 {
+            margin-bottom: 60px;
+        }
+
+        .journey-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .journey-step {
+            background-color: #0A0A0A;
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 2px solid #1a1a1a;
+            transition: all 0.3s ease;
+        }
+
+        .journey-step:hover {
+            border-color: #FF6A00;
+            transform: translateY(-4px);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #C84A00 0%, #FF6A00 100%);
+            color: #FFFFFF;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 60px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .journey-step h3 {
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+
+        .journey-step p {
+            color: #94a3b8;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            padding: 80px 20px;
+            background-color: #0A0A0A;
+        }
+
+        .social-proof h2 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto 60px;
+        }
+
+        .testimonial {
+            background-color: #121212;
+            padding: 32px;
+            border-radius: 8px;
+            border-left: 4px solid #FF6A00;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            font-style: italic;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            font-weight: 600;
+            color: #FF6A00;
+        }
+
+        .testimonial-role {
+            font-size: 14px;
+            color: #94a3b8;
+        }
+
+        .stats {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #121212;
+            border-radius: 8px;
+        }
+
+        .stats p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .stats strong {
+            color: #FF6A00;
+            font-size: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 20px;
+            background-color: #121212;
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #0A0A0A;
+            padding: 32px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #FF6A00;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #94a3b8;
+            line-height: 1.7;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 80px 20px;
+            background-color: #0A0A0A;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #121212;
+            padding: 60px 40px;
+            border-radius: 12px;
+            border: 2px solid #1a1a1a;
+        }
+
+        .form-container h2 {
+            margin-bottom: 16px;
+        }
+
+        .form-container .form-subtitle {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            border: 2px solid #1a1a1a;
+            border-radius: 8px;
+            background-color: #0A0A0A;
+            color: #FFFFFF;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #FF6A00;
+        }
+
+        .form-group input::placeholder {
+            color: #94a3b8;
+        }
+
+        .form-benefits {
+            margin: 32px 0;
+            text-align: left;
+            padding: 24px;
+            background-color: #0A0A0A;
+            border-radius: 8px;
+        }
+
+        .form-benefits p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .form-benefits p:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FF6A00;
+            font-weight: 700;
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            padding: 80px 20px;
+            background-color: #121212;
+            text-align: center;
+        }
+
+        .final-cta .content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .final-cta h2 {
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background-color: #0A0A0A;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 16px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #FF6A00;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero .subheadline {
+                font-size: 18px;
+            }
+
+            .cta-button {
+                padding: 16px 40px;
+                font-size: 16px;
+                width: 100%;
+            }
+
+            .pain-section,
+            .journey-section,
+            .social-proof,
+            .faq-section,
+            .form-section,
+            .final-cta {
+                padding: 60px 20px;
+            }
+
+            .journey-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 40px 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .cta-button {
+                font-size: 15px;
+                padding: 14px 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fire Gradient Accent Line -->
+    <div class="accent-line"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">IGNITE</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>From Stuck to Power<br>(In 3 Days)</h1>
+            <p class="subheadline">
+                Email 1: See your pattern. Email 2: Understand why. Email 3: Start unstuck.
+            </p>
+            <a href="#get-decoder" class="cta-button">Start Your Decoder</a>
+        </div>
+    </section>
+
+    <!-- Pain Recognition Section -->
+    <section class="pain-section">
+        <div class="content">
+            <p>You're stuck.</p>
+
+            <p>But you're not sure why.</p>
+
+            <p>You're making good money but not breakthrough money.</p>
+
+            <p>You're successful but unfulfilled.</p>
+
+            <p>You're busy but not building anything that lasts.</p>
+
+            <div class="pain-points">
+                <div class="pain-point">
+                    <strong>Lack of Clarity:</strong> You don't have a clear vision for your future. You're not sure what steps to take next. Every option feels both right and wrong.
+                </div>
+
+                <div class="pain-point">
+                    <strong>Overwhelm:</strong> You're juggling too many demands. You're trying to keep everything together but you're one crisis away from collapse.
+                </div>
+
+                <div class="pain-point">
+                    <strong>Self-Doubt:</strong> Despite your accomplishments, you doubt your ability to break through. You wonder if you're actually qualified for what you want.
+                </div>
+
+                <div class="pain-point">
+                    <strong>Work-Life Imbalance:</strong> You're sacrificing your personal life for career (or vice versa). There's never enough time for what matters.
+                </div>
+
+                <div class="pain-point">
+                    <strong>Analysis Paralysis:</strong> You plan everything perfectly but never launch. By the time you're ready, the moment has passed. Fear of the wrong choice keeps you stuck and small.
+                </div>
+            </div>
+
+            <p>Here's the hidden problem:</p>
+
+            <p><strong>Most people don't understand their own stuck pattern.</strong></p>
+
+            <p>So they can't fix it.</p>
+
+            <p>They stay stuck. For years.</p>
+
+            <p>That changes today.</p>
+        </div>
+    </section>
+
+    <!-- Journey Section (3-Part Breakdown) -->
+    <section class="journey-section">
+        <div class="container">
+            <h2>Your 3-Day Decoder<br>(Here's What Happens)</h2>
+
+            <div class="journey-steps">
+                <!-- Email 1 -->
+                <div class="journey-step">
+                    <div class="step-number">1</div>
+                    <h3>See Your Exact Pattern</h3>
+                    <p><strong>EMAIL 1 - ASSESSMENT (Today)</strong></p>
+                    <p>You take a quick assessment. Get instant results showing your specific stuck pattern.</p>
+                    <p>Understand what's been holding you back.</p>
+                    <p>See it clearly for the first time.</p>
+                </div>
+
+                <!-- Email 2 -->
+                <div class="journey-step">
+                    <div class="step-number">2</div>
+                    <h3>Understand Why It Exists</h3>
+                    <p><strong>EMAIL 2 - TEACHING (Tomorrow)</strong></p>
+                    <p>Learn the psychological mechanism.</p>
+                    <p>See why this pattern keeps repeating.</p>
+                    <p>Watch a video showing exactly how to break it.</p>
+                    <p>Finally understand the "why" behind your stuck.</p>
+                </div>
+
+                <!-- Email 3 -->
+                <div class="journey-step">
+                    <div class="step-number">3</div>
+                    <h3>Take Your First Step</h3>
+                    <p><strong>EMAIL 3 - ACTION (Day 3)</strong></p>
+                    <p>Get your personal escape plan.</p>
+                    <p>A concrete first action.</p>
+                    <p>A worksheet showing exactly what to do.</p>
+                    <p>Your roadmap from stuck to unstuck.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>What People Discover</h2>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "I finally understood what was blocking me. Email 1 showed me a pattern I'd been running for years without realizing it. That awareness alone changed everything."
+                    </p>
+                    <p class="testimonial-author">Sarah Mitchell</p>
+                    <p class="testimonial-role">Product Manager, Tech Startup</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "After Email 3, I knew exactly what to do. Not just theory—concrete action. I completed the worksheet that night and started seeing results within a week."
+                    </p>
+                    <p class="testimonial-author">Marcus Chen</p>
+                    <p class="testimonial-role">Founder & CEO</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "The decoder is brilliant. It's not generic advice—it's personalized based on your specific stuck pattern. I've recommended it to my entire team."
+                    </p>
+                    <p class="testimonial-author">Jennifer Torres</p>
+                    <p class="testimonial-role">VP of Operations</p>
+                </div>
+            </div>
+
+            <div class="stats">
+                <p><strong>3,500+ professionals</strong> have decoded their pattern</p>
+                <p>Average clarity increase: <strong>6.2/10 → 8.9/10</strong> in 3 days</p>
+                <p><strong>78%</strong> took action on Email 3 worksheet</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Common Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <p class="faq-question">Will I get sold to?</p>
+                    <p class="faq-answer">
+                        Yes. By Day 3 email, we'll mention IGNITE. But the decoder is 100% valuable standalone. Use it whether or not you ever join IGNITE. The assessment, teaching, and action plan are completely free and completely useful on their own.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">How long does it take?</p>
+                    <p class="faq-answer">
+                        Email 1 (assessment): 5 minutes. Email 2 (watch): 8 minutes. Email 3 (worksheet): 10 minutes. Total: 23 minutes spread across 3 days. You'll invest less than half an hour to gain complete clarity on your stuck pattern.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">What if I'm not actually stuck?</p>
+                    <p class="faq-answer">
+                        Then the assessment will show you you're not stuck (honest feedback). But 99% of high-achievers discover something they didn't know about themselves. Even successful people have blind spots. The decoder reveals them.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <p class="faq-question">Is this just generic advice?</p>
+                    <p class="faq-answer">
+                        No. The decoder identifies your specific pattern (there are 5 different types of stuck). Your teaching in Email 2 and your action plan in Email 3 are personalized based on your assessment results. This isn't one-size-fits-all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="get-decoder">
+        <div class="container">
+            <div class="form-container">
+                <h2>Start Your Decoder</h2>
+                <p class="form-subtitle">
+                    In 3 days, you'll know your pattern, understand why it exists, and have your first action step.
+                </p>
+
+                <form id="decoder-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your first name"
+                        >
+                    </div>
+
+                    <div class="form-benefits">
+                        <p>100% Free (no credit card required)</p>
+                        <p>3 emails over 3 days</p>
+                        <p>Assessment + teaching + action plan</p>
+                        <p>You'll discover your escape route</p>
+                    </div>
+
+                    <button type="submit" class="cta-button">Start My Decoder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="content">
+                <h2>You know you're stuck.</h2>
+                <p>
+                    You just don't know how to get unstuck.
+                </p>
+                <p>
+                    This decoder shows you exactly how.
+                </p>
+                <a href="#get-decoder" class="cta-button">Reveal Your Pattern</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="logo" style="font-size: 18px; margin-bottom: 20px;">IGNITE</p>
+            <p>&copy; 2025 IGNITE. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Unsubscribe</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client-Side Form Validation -->
+    <script>
+        document.getElementById('decoder-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+
+            // Basic email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            // Form is valid - in production, submit to your email provider
+            console.log('Form submitted:', { email, name });
+            alert('Success! Check your email for your first assessment.');
+
+            // In production, replace above with actual form submission:
+            // this.submit();
+
+            return false;
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
