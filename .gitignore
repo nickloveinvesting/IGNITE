@@ -1,0 +1,83 @@
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+secrets.txt
+config.secret.json
+
+# Personal credentials
+credentials/
+api-keys/
+*.key
+*.pem
+*.cert
+
+# Draft work
+drafts/
+work-in-progress/
+_archive/
+scratch/
+notes/
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Generated files (temporary)
+temp/
+cache/
+tmp/
+*.log
+*.tmp
+
+# Node modules (if using any JS tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (if using any Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# PDF drafts before finalization
+*.pdf.draft
+*.pdf.wip
+
+# Video files (too large for git)
+*.mp4
+*.mov
+*.avi
+*.wmv
+
+# Large image files
+*.psd
+*.ai
+*.sketch
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# OS generated files
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Testing and development
+test-output/
+coverage/
+.pytest_cache/
