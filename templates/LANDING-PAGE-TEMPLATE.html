@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[MAGNET NAME] | IGNITE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: #2C3539; line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+        /* Hero Section */
+        .hero { background: #2C3539; color: #FFFFFF; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 20px; margin-bottom: 40px; }
+
+        /* CTA Button */
+        .cta-button { background: #FF4D00; color: #FFFFFF; font-size: 18px; font-weight: 700;
+                      padding: 16px 40px; border: none; border-radius: 4px; cursor: pointer;
+                      text-decoration: none; display: inline-block; }
+        .cta-button:hover { background: #E64400; }
+
+        /* Content Sections */
+        .section { padding: 60px 20px; }
+        .section h2 { font-size: 36px; font-weight: 600; margin-bottom: 20px; color: #2C3539; }
+        .section p { font-size: 16px; margin-bottom: 20px; }
+
+        /* Benefits */
+        .benefits { display: grid; grid-template-columns: 1fr; gap: 30px; }
+        .benefit h3 { font-size: 24px; font-weight: 600; color: #FF4D00; margin-bottom: 10px; }
+
+        /* Form */
+        .form-container { background: #F5F5F5; padding: 40px; border-radius: 8px; margin-top: 40px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
+        .form-group input { width: 100%; padding: 12px; font-size: 16px; border: 1px solid #ccc;
+                            border-radius: 4px; font-family: 'Inter', sans-serif; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .section h2 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>[HEADLINE: Address Specific Pain Point]</h1>
+            <p>[SUBHEADLINE: Clarify Value Proposition]</p>
+            <a href="#form" class="cta-button">[CTA: DOWNLOAD YOUR FREE [MAGNET]]</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="container">
+            <h2>You're Stuck. Here's Why.</h2>
+            <p>[Agitate specific pain point #1]</p>
+            <p>[Agitate specific pain point #2]</p>
+            <p>[Agitate specific pain point #3]</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="section" style="background: #F5F5F5;">
+        <div class="container">
+            <h2>Introducing: [MAGNET NAME]</h2>
+            <p>[Explain how it solves the problem]</p>
+            <p>[Preview what's inside - 3-5 bullet points]</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <h2>What You'll Get</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>[Benefit #1 Headline]</h3>
+                    <p>[2-3 sentence explanation of transformation]</p>
+                </div>
+                <div class="benefit">
+                    <h3>[Benefit #2 Headline]</h3>
+                    <p>[2-3 sentence explanation of transformation]</p>
+                </div>
+                <div class="benefit">
+                    <h3>[Benefit #3 Headline]</h3>
+                    <p>[2-3 sentence explanation of transformation]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section" id="form" style="background: #2C3539; color: #FFFFFF;">
+        <div class="container">
+            <h2 style="color: #FFFFFF;">Get Instant Access</h2>
+            <p>Enter your details below. Your [MAGNET] will be delivered immediately.</p>
+            <form class="form-container" action="[FORM_ACTION_URL]" method="POST">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="cta-button">[DOWNLOAD NOW]</button>
+                <p style="font-size: 12px; margin-top: 20px; color: #2C3539;">
+                    We respect your privacy. Unsubscribe anytime.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #F5F5F5; padding: 40px 20px; text-align: center;">
+        <p>&copy; 2025 IGNITE. All rights reserved.</p>
+        <p><a href="[PRIVACY_URL]">Privacy Policy</a> | <a href="[TERMS_URL]">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
