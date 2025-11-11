@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belief System Audit | IGNITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2C3539;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: #2C3539;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #FFFFFF;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .subheadline {
+            color: #FF4D00;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .hero p {
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: #FF4D00;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #E04500;
+        }
+
+        .problem-section {
+            background: #FFFFFF;
+            padding: 80px 20px;
+        }
+
+        .problem-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2C3539;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .problem-card {
+            background: #F5F5F5;
+            padding: 30px;
+            border-left: 4px solid #FF4D00;
+        }
+
+        .problem-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2C3539;
+            margin-bottom: 15px;
+        }
+
+        .problem-card p {
+            font-size: 16px;
+            color: #2C3539;
+            line-height: 1.6;
+        }
+
+        .solution-section {
+            background: #2C3539;
+            padding: 80px 20px;
+            color: #FFFFFF;
+        }
+
+        .solution-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .solution-section .intro {
+            font-size: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #FF4D00;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .how-it-works {
+            background: #FFFFFF;
+            padding: 80px 20px;
+        }
+
+        .how-it-works h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2C3539;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background: #FF4D00;
+            color: #FFFFFF;
+            font-size: 32px;
+            font-weight: 700;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2C3539;
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            font-size: 16px;
+            color: #2C3539;
+            line-height: 1.6;
+        }
+
+        .results-section {
+            background: #F5F5F5;
+            padding: 80px 20px;
+        }
+
+        .results-section h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2C3539;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .results-intro {
+            font-size: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            color: #2C3539;
+        }
+
+        .belief-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .belief-type {
+            background: #FFFFFF;
+            padding: 30px;
+            border-top: 4px solid #FF4D00;
+        }
+
+        .belief-type h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #FF4D00;
+            margin-bottom: 15px;
+        }
+
+        .belief-type p {
+            font-size: 16px;
+            color: #2C3539;
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background: #2C3539;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guarantee {
+            background: #FFFFFF;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .guarantee h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: #2C3539;
+            margin-bottom: 20px;
+        }
+
+        .guarantee p {
+            font-size: 18px;
+            color: #2C3539;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subheadline {
+                font-size: 20px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .problem-section h2,
+            .solution-section h2,
+            .how-it-works h2,
+            .results-section h2,
+            .guarantee h2 {
+                font-size: 28px;
+            }
+
+            .cta-section h2 {
+                font-size: 32px;
+            }
+
+            .step {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Beliefs Don't Match Your Behavior<br>(And That's Why You're Stuck)</h1>
+            <p class="subheadline">Take the 8-question Belief System Audit and discover the hidden beliefs sabotaging your success</p>
+            <p>You know what to do. You've read the books. You've set the goals. But you're not doing it. The problem isn't discipline. It's your belief system.</p>
+            <a href="#quiz" class="cta-button">START YOUR FREE AUDIT NOW</a>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>The Gap Between What You Know and What You Do</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>You Know Better</h3>
+                    <p>You understand the strategies. You know what successful people do. You can articulate the principles. But when it's time to execute, something stops you.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>You're Self-Aware</h3>
+                    <p>You recognize your patterns. You see yourself repeating the same cycles. You catch yourself making excuses. But awareness alone hasn't changed anything.</p>
+                </div>
+                <div class="problem-card">
+                    <h3>You're Stuck</h3>
+                    <p>Despite your knowledge, despite your awareness, despite your best intentions—you're not where you want to be. And you're starting to wonder if you ever will be.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2>The Real Problem: Your Operating System</h2>
+            <p class="intro">Your conscious mind sets goals. Your belief system determines if you achieve them. Most people spend years trying to change their behavior without ever examining the beliefs driving it.</p>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-number">70%</div>
+                    <h3>Unconscious Decisions</h3>
+                    <p>Research shows most of your daily decisions are driven by unconscious beliefs you're not even aware of.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">50%</div>
+                    <h3>Intention-Behavior Gap</h3>
+                    <p>Half of people fail to act on their stated intentions because their beliefs contradict their goals.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-number">6</div>
+                    <h3>Beliefs Formed Early</h3>
+                    <p>By age 6, your core belief system is formed. You've been operating on outdated programming for decades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How The Belief System Audit Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Answer 8 Questions</h3>
+                        <p>Not theory. Not hypotheticals. Real questions about your actual behaviors in the last 30 days. What you've done reveals what you actually believe.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Get Your Belief Pattern Type</h3>
+                        <p>Discover which of 6 belief patterns is running your life. See the specific ways this pattern shows up in your business, relationships, and health.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Receive Your Personalized Report</h3>
+                        <p>Get a detailed analysis showing the gap between your stated values and actual beliefs, plus the estimated cost of this misalignment.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Access Your 30/60/90-Day Roadmap</h3>
+                        <p>Receive a customized belief transformation plan based on your specific pattern. Not generic advice—a precise strategy for your operating system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2>Discover Your Belief Pattern Type</h2>
+            <p class="results-intro">Your assessment will reveal which of these 6 belief patterns is driving your decisions:</p>
+
+            <div class="belief-types">
+                <div class="belief-type">
+                    <h3>The Scarcity Operator</h3>
+                    <p>You make decisions from fear of loss rather than pursuit of gain. Every opportunity feels like a risk. Every investment feels dangerous.</p>
+                </div>
+                <div class="belief-type">
+                    <h3>The Approval Seeker</h3>
+                    <p>Your choices are driven by what others expect. You've optimized for external validation at the expense of internal alignment.</p>
+                </div>
+                <div class="belief-type">
+                    <h3>The Perfectionist Procrastinator</h3>
+                    <p>Your standards are so high that starting feels impossible. You delay execution waiting for perfect conditions that never come.</p>
+                </div>
+                <div class="belief-type">
+                    <h3>The Worthy-When Achiever</h3>
+                    <p>You believe your worth is earned, not inherent. Rest feels like laziness. Self-care feels selfish. Burnout feels inevitable.</p>
+                </div>
+                <div class="belief-type">
+                    <h3>The Fixed-Capacity Believer</h3>
+                    <p>You operate as if success in one area requires sacrifice in another. You can't imagine being successful AND healthy AND happy simultaneously.</p>
+                </div>
+                <div class="belief-type">
+                    <h3>The Evidence Collector</h3>
+                    <p>You've failed before, so you expect to fail again. You actively collect evidence supporting your limiting beliefs while dismissing contrary data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to See What's Really Running Your Life?</h2>
+            <p>Take the 8-minute Belief System Audit. Discover your pattern. Get your personalized roadmap. All free.</p>
+            <a href="#quiz" class="cta-button">START YOUR FREE AUDIT NOW</a>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="guarantee">
+        <div class="container">
+            <h2>No Tricks. No Upsells. Just Truth.</h2>
+            <p>This isn't a sales funnel disguised as value. It's a diagnostic tool. You'll get real insights about your belief system whether you ever work with me or not. Take the audit. See what's been invisible. Make better decisions.</p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for CTA buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
