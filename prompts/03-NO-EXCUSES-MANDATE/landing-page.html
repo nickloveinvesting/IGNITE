@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Accepting Excuses (In the Next 15 Minutes) | IGNITE</title>
+    <meta name="description" content="Write 3 mandates that override your biggest blocks. Start acting immediately. Free No Excuses Mandate Builder worksheet.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #2C3539;
+            background: #FFFFFF;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .container-narrow {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1.3;
+            color: #2C3539;
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #2C3539;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #2C3539;
+            margin-bottom: 16px;
+        }
+
+        .subheadline {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 32px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #FF4D00;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 18px 48px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(255, 77, 0, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #2C3539;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .subheadline {
+            color: #FFFFFF;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+        /* Problem Recognition Section */
+        .problem-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .problem-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .excuse-list {
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .excuse-item {
+            background: #F5F5F5;
+            padding: 20px;
+            margin-bottom: 16px;
+            border-left: 4px solid #FF4D00;
+        }
+
+        .excuse-item h3 {
+            color: #FF4D00;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .excuse-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #2C3539;
+        }
+
+        .callout {
+            background: #2C3539;
+            color: #FFFFFF;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .callout p {
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* The Insight Section */
+        .insight-section {
+            padding: 80px 20px;
+            background: #F9F9F9;
+        }
+
+        .insight-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .column {
+            background: #FFFFFF;
+            padding: 32px;
+            border-radius: 4px;
+        }
+
+        .column h3 {
+            color: #FF4D00;
+        }
+
+        .column.highlight {
+            border: 3px solid #FF4D00;
+        }
+
+        /* The Solution Section */
+        .solution-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .solution-section h2 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .solution-section .subheadline {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .worksheet-preview {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            background: #F5F5F5;
+            padding: 40px;
+            border-radius: 4px;
+        }
+
+        .worksheet-steps {
+            display: grid;
+            gap: 24px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .step-number {
+            background: #FF4D00;
+            color: #FFFFFF;
+            font-size: 20px;
+            font-weight: 700;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            margin: 0;
+        }
+
+        /* Social Proof Section */
+        .social-proof-section {
+            padding: 80px 20px;
+            background: #2C3539;
+            color: #FFFFFF;
+        }
+
+        .social-proof-section h2 {
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 32px;
+            border-radius: 4px;
+            border-left: 4px solid #FF4D00;
+        }
+
+        .testimonial-text {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-author {
+            color: #FF4D00;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .testimonial-result {
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        /* What's Included Section */
+        .included-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .included-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            max-width: 1000px;
+            margin: 0 auto 40px;
+        }
+
+        .feature {
+            background: #F9F9F9;
+            padding: 32px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .feature h3 {
+            color: #FF4D00;
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            margin: 0;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 80px 20px;
+            background: #F9F9F9;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            padding: 48px;
+            border-radius: 4px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .form-container .subheadline {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2C3539;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            border: 2px solid #E0E0E0;
+            border-radius: 4px;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #FF4D00;
+        }
+
+        .form-submit {
+            width: 100%;
+        }
+
+        .privacy-note {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2C3539;
+            color: #FFFFFF;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        .footer a {
+            color: #FF4D00;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .problem-section,
+            .insight-section,
+            .solution-section,
+            .social-proof-section,
+            .included-section,
+            .form-section {
+                padding: 60px 20px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Stop Accepting Excuses (In the Next 15 Minutes)</h1>
+            <p class="subheadline">Write 3 mandates that override your biggest blocks. Start acting immediately.</p>
+            <a href="#form" class="btn">GET THE WORKSHEET</a>
+        </div>
+    </section>
+
+    <!-- Problem Recognition Section -->
+    <section class="problem-section">
+        <div class="container-narrow">
+            <h2>You Know What to Do. You Just Don't Do It.</h2>
+
+            <p>You're not confused. You're not uninformed. You don't need another course or another book.</p>
+
+            <p>You need to stop accepting the same excuses that have kept you stuck for months—maybe years.</p>
+
+            <h3 style="text-align: center; margin-top: 48px; margin-bottom: 24px;">These Excuses Sound Familiar?</h3>
+
+            <div class="excuse-list">
+                <div class="excuse-item">
+                    <h3>"I don't have time"</h3>
+                    <p>Translation: This isn't a priority. But you won't admit that to yourself.</p>
+                </div>
+
+                <div class="excuse-item">
+                    <h3>"I'm waiting for the perfect moment"</h3>
+                    <p>Translation: I'm afraid, so I'm using timing as an excuse to stay comfortable.</p>
+                </div>
+
+                <div class="excuse-item">
+                    <h3>"I'm not ready yet"</h3>
+                    <p>Translation: I'll never feel ready, so I'll keep preparing forever and never start.</p>
+                </div>
+
+                <div class="excuse-item">
+                    <h3>"I need more information"</h3>
+                    <p>Translation: I'm hiding behind research to avoid the risk of actually doing something.</p>
+                </div>
+
+                <div class="excuse-item">
+                    <h3>"I'm afraid it will fail"</h3>
+                    <p>Translation: I'd rather not try than risk finding out I'm not as capable as I think.</p>
+                </div>
+            </div>
+
+            <div class="callout">
+                <p>The excuses aren't the problem. Accepting them is.</p>
+            </div>
+
+            <p style="text-align: center; font-size: 18px; margin-top: 40px;">When you keep accepting the same excuses, you stay in the same place. Different year. Same life. Same regrets.</p>
+        </div>
+    </section>
+
+    <!-- The Insight Section -->
+    <section class="insight-section">
+        <div class="container">
+            <h2>Why Mandates Override Excuses</h2>
+
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">Most people try to fight excuses in the moment with willpower and motivation. That's why most people lose. You're going to use a different approach.</p>
+
+            <div class="two-column">
+                <div class="column">
+                    <h3>The Old Way: Fight Excuses With Willpower</h3>
+                    <p>Your excuse shows up in the moment:</p>
+                    <p><em>"I don't have time."</em></p>
+                    <p>You try to argue with yourself:</p>
+                    <p><em>"Yes I do, I just need to be more disciplined..."</em></p>
+                    <p>Your brain believes the excuse.</p>
+                    <p><strong>Result: You don't act.</strong></p>
+                </div>
+
+                <div class="column highlight">
+                    <h3>The New Way: Pre-Decide With Mandates</h3>
+                    <p>Before the moment, you write a mandate:</p>
+                    <p><em>"I mandate 30 minutes daily on this project, NO EXCEPTIONS."</em></p>
+                    <p>When the excuse shows up, your mandate is already there:</p>
+                    <p><em>"I don't have time"</em> vs. <em>"I mandate 30 minutes daily"</em></p>
+                    <p>Your mandate is stronger than your excuse.</p>
+                    <p><strong>Result: You act.</strong></p>
+                </div>
+            </div>
+
+            <div class="callout">
+                <p>You don't need to be stronger in the moment. Your mandate just needs to be clearer than your excuse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2>The No Excuses Mandate Builder</h2>
+            <p class="subheadline">A simple 1-page worksheet that takes 15 minutes to complete—and changes everything.</p>
+
+            <div class="worksheet-preview">
+                <h3 style="text-align: center; margin-bottom: 32px;">How It Works:</h3>
+
+                <div class="worksheet-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Name Your 3 Biggest Excuses</h3>
+                            <p>No generic answers. Be specific. "I don't have time for what?" "I'm not ready to do what?"</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Calculate the Cost</h3>
+                            <p>What is each excuse actually costing you? In dollars, in time, in opportunity, in self-respect.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Write the Mandate That Overrides Each Excuse</h3>
+                            <p>Not "I'll try to..." Not "I should..." Your mandate is specific, non-negotiable, and stronger than your excuse.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Commit</h3>
+                            <p>Sign it. Date it. You're making a formal commitment to yourself.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Read It Daily for 28 Days</h3>
+                            <p>Your mandates get stronger every time you read them. Your excuses get quieter.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#form" class="btn">GET THE WORKSHEET NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <h2>What Happens When You Stop Accepting Excuses</h2>
+
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"I used 'I don't have time' for 18 months. My mandate was '2 hours daily, no exceptions.' 60 days later, my business was generating revenue for the first time."</p>
+                    <p class="testimonial-author">— James K.</p>
+                    <p class="testimonial-result">Business Owner, First Revenue in 60 Days</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"My excuse was 'I'm waiting for the perfect moment.' My mandate: 'I start before I'm ready.' I launched imperfectly in 2 weeks. Best decision I ever made."</p>
+                    <p class="testimonial-author">— Sarah M.</p>
+                    <p class="testimonial-result">Course Creator, Launched in 14 Days</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"I said 'I'm not qualified' for years. My mandate: 'I learn by doing, not by waiting.' Applied for the role. Got it. My excuse was a lie."</p>
+                    <p class="testimonial-author">— Marcus T.</p>
+                    <p class="testimonial-result">Leadership Position, 6-Figure Salary</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"My excuse was 'I need more information.' My mandate: 'I move with 85% clarity.' Stopped researching. Started building. Changed my entire trajectory."</p>
+                    <p class="testimonial-author">— Rachel P.</p>
+                    <p class="testimonial-result">Tech Founder, Product Launched in 45 Days</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"I told myself 'I'm too busy' while wasting 3 hours daily on my phone. My mandate showed me the truth. 90 days later, I'm in the best shape of my life."</p>
+                    <p class="testimonial-author">— David L.</p>
+                    <p class="testimonial-result">Lost 35 lbs, Running 5K Daily</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"Writing my mandates felt confrontational. But that's the point. My excuses were comfortable lies. My mandates are uncomfortable truths. I needed the truth."</p>
+                    <p class="testimonial-author">— Jennifer W.</p>
+                    <p class="testimonial-result">Career Transition, 40% Income Increase</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="included-section">
+        <div class="container">
+            <h2>What You're Getting (100% Free)</h2>
+
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">📄</div>
+                    <h3>The 1-Page Mandate Worksheet</h3>
+                    <p>Fillable PDF. Print it or complete it digitally. Simple structure. Powerful results.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Excuse → Mandate Framework</h3>
+                    <p>The exact 3-column system: Your excuse, the cost, your counter-mandate.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">✍️</div>
+                    <h3>Commitment Contract</h3>
+                    <p>Sign and date your mandates. Make them real. Make them binding.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📧</div>
+                    <h3>28-Day Email Accountability</h3>
+                    <p>Regular check-ins, support, and reinforcement to keep your mandates stronger than your excuses.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎥</div>
+                    <h3>Video Teaching: Why Mandates Work</h3>
+                    <p>5-minute breakdown of the psychology behind pre-commitment and mandate effectiveness.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Proven Mandate Examples</h3>
+                    <p>Real mandates from real people who stopped accepting excuses and started seeing results.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#form" class="btn">YES, I'M READY TO STOP MAKING EXCUSES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section" id="form">
+        <div class="form-container">
+            <h2>Get Your No Excuses Mandate Builder</h2>
+            <p class="subheadline">Enter your details below and get instant access to the worksheet + video + email sequence.</p>
+
+            <form action="[YOUR-EMAIL-PROVIDER-ENDPOINT]" method="POST">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required placeholder="Enter your first name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <button type="submit" class="btn form-submit">GET THE WORKSHEET NOW</button>
+            </form>
+
+            <p class="privacy-note">We respect your privacy. Unsubscribe anytime. No spam, ever.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IGNITE Personal Transformation. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="https://www.joinignite.com/privacy">Privacy Policy</a> |
+                <a href="https://www.joinignite.com/terms">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
