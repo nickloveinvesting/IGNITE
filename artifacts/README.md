@@ -4,24 +4,43 @@ This folder stores all generated artifacts from the 10 lead magnet prompts.
 
 ---
 
+## Quick Status Summary
+
+| Magnet | Title | Status | Files | Priority |
+|--------|-------|--------|-------|----------|
+| 01 | Pain & Vision Ledger | ✅ Complete | 9 files | Ready to Launch |
+| 02 | Archetype Quiz | ⏳ Pending | 0 files | High Priority |
+| 03 | No Excuses Mandate | ✅ Complete | 8 files | Ready to Launch |
+| 04 | Seven Levels Why | ✅ Complete | 8 files | Ready to Launch |
+| 05 | Belief System Audit | ✅ Complete | 8 files | Ready to Launch |
+| 06 | Identity Statement | ⏳ Pending | 0 files | High Priority |
+| 07 | Redemptive Story | ✅ Complete | 8 files | Ready to Launch |
+| 08 | Daily Discipline | ⏳ Pending | 0 files | High Priority |
+| 09 | 28-Day Challenge | ✅ Complete | 6 files | Ready to Launch |
+| 10 | Pain to Power Decoder | ✅ Complete | 6 files | Ready to Launch |
+
+**Overall Status:** 7 of 10 complete (70%) | 3 pending generation (30%)
+
+---
+
 ## Folder Structure
 
 ```
 artifacts/
 ├── README.md (this file)
-├── magnet-01-pain-vision-ledger/
-├── magnet-02-archetype-quiz/
-├── magnet-03-no-excuses-mandate/
-├── magnet-04-seven-levels-why/
-├── magnet-05-belief-system-audit/
-├── magnet-06-identity-statement/
-├── magnet-07-redemptive-story/
-├── magnet-08-daily-discipline/
-├── magnet-09-twenty-eight-day-challenge/
-└── magnet-10-pain-to-power-decoder/
+├── magnet-01-pain-vision-ledger/           ✅ COMPLETE
+├── magnet-02-archetype-quiz/               ⏳ ARTIFACTS MISSING - PENDING GENERATION
+├── magnet-03-no-excuses-mandate/           ✅ COMPLETE
+├── magnet-04-seven-levels-why/             ✅ COMPLETE
+├── magnet-05-belief-system-audit/          ✅ COMPLETE
+├── magnet-06-identity-statement/           ⏳ ARTIFACTS MISSING - PENDING GENERATION
+├── magnet-07-redemptive-story-reframe/     ✅ COMPLETE
+├── magnet-08-daily-discipline/             ⏳ ARTIFACTS MISSING - PENDING GENERATION
+├── magnet-09-twenty-eight-day-challenge/   ✅ COMPLETE
+└── magnet-10-pain-to-power-decoder/        ✅ COMPLETE
 ```
 
-Each folder contains 6 artifacts generated from Claude AI.
+Each folder should contain 6 artifacts generated from Claude AI.
 
 ---
 

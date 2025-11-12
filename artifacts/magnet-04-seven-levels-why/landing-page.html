@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover your unshakable identity-level why. Move from surface motivation to soul-level clarity in 7 days with this research-backed framework.">
+    <title>Your Why Is Too Shallow (Go Deeper) - 7 Levels Deep Why Excavator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 12px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: #e74c3c;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            font-weight: 800;
+        }
+
+        .subheadline {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .video-placeholder {
+            background: #000;
+            border-radius: 8px;
+            height: 360px;
+            margin: 30px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        .play-button::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 25px solid #667eea;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            margin-left: 5px;
+        }
+
+        .problem-section {
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .problem-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .problem-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .problem-list li {
+            padding: 15px 0 15px 40px;
+            position: relative;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 17px;
+        }
+
+        .problem-list li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #e74c3c;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .solution-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .solution-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #27ae60;
+            text-align: center;
+        }
+
+        .benefit-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .benefit-list li {
+            padding: 12px 0 12px 40px;
+            position: relative;
+            font-size: 17px;
+        }
+
+        .benefit-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
+
+        .form-section {
+            background: #fff3cd;
+            border: 3px solid #ffc107;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+
+        .form-section h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .form-section p {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .opt-in-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 16px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(39, 174, 96, 0.4);
+        }
+
+        .privacy-note {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .framework-section {
+            margin: 50px 0;
+        }
+
+        .framework-section h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .levels-preview {
+            display: grid;
+            gap: 15px;
+        }
+
+        .level-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s;
+        }
+
+        .level-item:hover {
+            transform: translateX(5px);
+        }
+
+        .level-number {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .level-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .level-desc {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .social-proof {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .testimonial {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-style: italic;
+            border-left: 4px solid #27ae60;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            margin-top: 15px;
+            font-style: normal;
+            color: #667eea;
+        }
+
+        .credibility {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .credibility h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .research-citations {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .urgency-box {
+            background: #ffe5e5;
+            border: 2px solid #e74c3c;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .urgency-box strong {
+            color: #e74c3c;
+            font-size: 18px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .subheadline {
+                font-size: 18px;
+            }
+
+            .hero {
+                padding: 30px 25px;
+            }
+
+            .form-section {
+                padding: 25px 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="eyebrow">⚠️ WARNING: Uncomfortable Truth Ahead</div>
+
+            <h1>Your Why Is Too Shallow<br>(Go Deeper)</h1>
+
+            <p class="subheadline">
+                Most people are driven by surface motivation (money, status, achievement)—which research shows leads to burnout, decision paralysis, and quiet dissatisfaction. <strong>Discover your unshakable identity-level why in 7 days.</strong>
+            </p>
+
+            <div class="video-placeholder">
+                <div class="play-button"></div>
+                <!-- Replace with actual video embed: Vimeo, YouTube, Wistia -->
+                <!-- <iframe src="YOUR_VIDEO_URL" frameborder="0" allow="autoplay; fullscreen" style="width:100%;height:100%;border-radius:8px;"></iframe> -->
+            </div>
+
+            <!-- PROBLEM SECTION -->
+            <div class="problem-section">
+                <h2>The Problem With Surface Motivation</h2>
+                <p>You're achieving goals but feel empty. You know <em>what</em> you're doing but not <em>why</em> you're really doing it. Sound familiar?</p>
+
+                <ul class="problem-list">
+                    <li>You second-guess every major decision because you lack clarity about what truly matters</li>
+                    <li>Your motivation comes and goes—strong one week, gone the next</li>
+                    <li>You're chasing goals that look good on paper but feel hollow in reality</li>
+                    <li>You've achieved success but still feel like something's missing</li>
+                    <li>You're scared you're building the wrong life because your "why" is unclear</li>
+                </ul>
+
+                <p style="margin-top: 25px; font-weight: 600; color: #e74c3c; font-size: 18px;">
+                    Here's the truth: If your why is based on external outcomes (money, status, achievement), it's too shallow—and the research proves it.
+                </p>
+            </div>
+
+            <!-- STATS SECTION -->
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number">2.8x</span>
+                    <span class="stat-label">Higher satisfaction when motivation is identity-based vs. external</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">91%</span>
+                    <span class="stat-label">Follow-through rate when "why" is connected to identity</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">52%</span>
+                    <span class="stat-label">Of professionals would take a pay cut for values-aligned work</span>
+                </div>
+            </div>
+
+            <!-- SOLUTION SECTION -->
+            <div class="solution-section">
+                <h2>The Solution: Go 7 Levels Deep</h2>
+                <p>
+                    The <strong>7-Levels-Deep Why Excavator</strong> is a research-backed framework that moves you from surface motivation (fragile, unsustainable) to identity-level why (unshakable, unstoppable).
+                </p>
+
+                <ul class="benefit-list">
+                    <li>Make decisions with crystal clarity (no more second-guessing)</li>
+                    <li>Build motivation that doesn't fade when things get hard</li>
+                    <li>Wake up knowing exactly why you're doing what you're doing</li>
+                    <li>Align your daily actions with your deepest values</li>
+                    <li>Create an unshakable foundation for long-term success</li>
+                    <li>Stop chasing goals that don't matter and start pursuing what does</li>
+                </ul>
+            </div>
+
+            <!-- FRAMEWORK PREVIEW -->
+            <div class="framework-section">
+                <h2>The 7 Levels Framework</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #666;">
+                    Each level takes you deeper—from surface wants to soul-level truth.
+                </p>
+
+                <div class="levels-preview">
+                    <div class="level-item">
+                        <div class="level-number">Level 1</div>
+                        <div class="level-title">External Outcomes</div>
+                        <div class="level-desc">Surface desires: money, status, recognition</div>
+                    </div>
+
+                    <div class="level-item">
+                        <div class="level-number">Level 2</div>
+                        <div class="level-title">Practical Benefits</div>
+                        <div class="level-desc">How the outcome improves your circumstances</div>
+                    </div>
+
+                    <div class="level-item">
+                        <div class="level-number">Level 3</div>
+                        <div class="level-title">Feelings & Experiences</div>
+                        <div class="level-desc">The emotional states you're seeking</div>
+                    </div>
+
+                    <div class="level-item">
+                        <div class="level-number">Level 4</div>
+                        <div class="level-title">Identity & Self-Perception</div>
+                        <div class="level-desc">Who you want to become</div>
+                    </div>
+
+                    <div class="level-item">
+                        <div class="level-number">Level 5</div>
+                        <div class="level-title">Core Values</div>
+                        <div class="level-desc">Your fundamental beliefs about what matters</div>
+                    </div>
+
+                    <div class="level-item">
+                        <div class="level-number">Level 6</div>
+                        <div class="level-title">Life Meaning & Purpose</div>
+                        <div class="level-desc">Your larger reason for existence</div>
+                    </div>
+
+                    <div class="level-item" style="border-left-color: #27ae60; border-left-width: 6px;">
+                        <div class="level-number" style="color: #27ae60;">Level 7</div>
+                        <div class="level-title">Unshakable Identity-Core</div>
+                        <div class="level-desc">The deepest truth about who you are—your immovable foundation</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA FORM -->
+            <div class="form-section">
+                <h3>Get The Free 7-Levels-Deep Why Excavator</h3>
+                <p>
+                    <strong>Includes:</strong> Interactive worksheet, 3-minute video walkthrough, and 7-day email coaching sequence to guide you from surface to soul.
+                </p>
+
+                <form class="opt-in-form" action="YOUR_EMAIL_SERVICE_URL" method="POST">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <button type="submit" class="cta-button">Send Me The Free Excavator</button>
+                </form>
+
+                <p class="privacy-note">
+                    🔒 Your privacy is protected. Unsubscribe anytime. No spam, ever.
+                </p>
+            </div>
+
+            <!-- SOCIAL PROOF -->
+            <div class="social-proof">
+                <h2 style="margin-bottom: 30px;">What Happens When You Go Deep</h2>
+
+                <div class="testimonial">
+                    "I spent 15 years chasing money and status. The 7-levels exercise took me 30 minutes and completely changed my direction. For the first time, I understand WHY I'm building my business—and it's not what I thought."
+                    <div class="testimonial-author">— Sarah K., Entrepreneur</div>
+                </div>
+
+                <div class="testimonial">
+                    "I've done values exercises before, but this is different. Going 7 levels deep forced me past the bullsh*t answers to the real truth. Now every decision is easy because I know my unshakable why."
+                    <div class="testimonial-author">— Marcus T., Executive Coach</div>
+                </div>
+
+                <div class="testimonial">
+                    "Level 7 hit me like a truck. I literally started crying because I finally understood what I've been searching for. This framework is gold."
+                    <div class="testimonial-author">— Jennifer M., Marketing Director</div>
+                </div>
+            </div>
+
+            <!-- CREDIBILITY -->
+            <div class="credibility">
+                <h3>This Framework Is Research-Backed</h3>
+                <div class="research-citations">
+                    Based on converging evidence from:
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li><strong>Identity-Based Motivation Theory</strong> (Oyserman, USC)</li>
+                        <li><strong>Self-Determination Theory</strong> (Deci & Ryan)</li>
+                        <li><strong>Goal Setting Theory</strong> (Locke & Latham)</li>
+                        <li><strong>Values Theory</strong> (Schwartz & Bilsky)</li>
+                        <li><strong>Ikigai Research</strong> (Japanese purpose & longevity studies)</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-style: italic;">
+                        The 7-levels framework has been used by thousands of entrepreneurs, coaches, and high-achievers to move from surface motivation to identity-level clarity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- URGENCY -->
+            <div class="urgency-box">
+                <strong>⏰ Every day you operate from a shallow why is a day of wasted energy.</strong>
+                <p style="margin-top: 10px;">
+                    The research shows that surface motivation leads to burnout, indecision, and quiet desperation. Get clarity today.
+                </p>
+            </div>
+
+            <!-- FINAL CTA -->
+            <div class="form-section">
+                <h3>Ready To Discover Your Unshakable Why?</h3>
+                <p>
+                    Enter your details below and you'll get instant access to the complete 7-Levels-Deep Why Excavator—free.
+                </p>
+
+                <form class="opt-in-form" action="YOUR_EMAIL_SERVICE_URL" method="POST">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <button type="submit" class="cta-button">Yes! Send Me The Excavator Now</button>
+                </form>
+
+                <p class="privacy-note">
+                    🔒 Your privacy is protected. Unsubscribe anytime.
+                </p>
+            </div>
+
+            <!-- FINAL REASSURANCE -->
+            <div style="margin-top: 40px; text-align: center; padding: 30px; background: #f8f9fa; border-radius: 8px;">
+                <p style="font-size: 16px; line-height: 1.8; color: #555;">
+                    <strong>What You'll Get:</strong><br>
+                    ✓ The complete 7-Levels-Deep Why worksheet (interactive PDF)<br>
+                    ✓ 3-minute video walkthrough explaining why this matters<br>
+                    ✓ 7-day email coaching sequence guiding you through each level<br>
+                    ✓ Implementation planning template to turn insight into action<br>
+                    ✓ Values clarification exercises based on psychological research<br><br>
+
+                    <em>Everything you need to move from surface motivation to unshakable identity-level why.</em>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 IGNITE Lead Magnets. All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">
+                <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                <a href="#" style="color: white; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- CONVERSION TRACKING -->
+    <script>
+        // Add your analytics/conversion tracking code here
+        // Google Analytics, Facebook Pixel, etc.
+
+        // Example form tracking
+        document.querySelectorAll('.opt-in-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                // Track conversion event
+                console.log('Form submitted - track this conversion!');
+
+                // Send to analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'YOUR_CONVERSION_ID',
+                        'event_category': 'Lead Magnet',
+                        'event_label': '7 Levels Why Excavator'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
