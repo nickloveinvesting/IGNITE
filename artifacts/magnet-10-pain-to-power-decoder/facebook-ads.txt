@@ -1,0 +1,687 @@
+═══════════════════════════════════════════════════════════════════════
+FACEBOOK ADS - 3 VARIATIONS
+Lead Magnet: Pain to Power Decoder
+Campaign Objective: Lead Generation
+Total Budget: $300-500/week ($100-150/week per variation for testing)
+═══════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════
+AD VARIATION #1: PAIN RECOGNITION ANGLE
+Best For: Cold audiences, everyone has some stuck-ness
+Expected CTR: 2.8-3.8%
+Expected CPC: $0.45-$0.75
+═══════════════════════════════════════════════════════════════════════
+
+HEADLINE (60 characters max):
+"You're Stuck But You're Not Sure Why (3-Day Decoder)"
+Character count: 59 ✓
+
+BODY COPY (125 characters max):
+"Email 1 shows your pattern. Email 2 teaches why. Email 3 gives your escape route. In 3 days, you'll know exactly how to get unstuck."
+Character count: 144 ✗
+
+BODY COPY (REVISED to fit 125 chars):
+"3 days. 3 emails. Find your pattern, learn why it exists, get your escape route. Finally understand how to get unstuck."
+Character count: 120 ✓
+
+---
+
+IMAGE SPECIFICATIONS FOR CANVA:
+
+DIMENSIONS: 1200 x 628 pixels (Facebook feed format)
+
+DESIGN LAYOUT:
+- Background: Charcoal gradient (#121212 → #0A0A0A, left to right)
+- Subtle texture overlay (optional, 10% opacity)
+
+LEFT SIDE (40% of image):
+- Visual: Abstract representation of confusion/being stuck
+  * Tangled lines or maze (dark gray #2a2a2a)
+  * Person silhouette looking lost/confused (minimal illustration)
+  * Muted colors (grays, dark blues)
+  * Conveys: "stuck" feeling
+
+CENTER (20% of image):
+- Visual: Arrow or pathway
+  * Fire gradient (#C84A00 → #FF6A00)
+  * Bold, clear direction from left to right
+  * Size: Prominent but not overwhelming
+  * Conveys: "transformation" pathway
+
+RIGHT SIDE (40% of image):
+- Visual: Clarity/power/forward movement
+  * Person silhouette moving forward with confidence
+  * Clear pathway or open space
+  * Brighter elements (still professional)
+  * Conveys: "unstuck" outcome
+
+TEXT OVERLAY (Bottom third):
+- Text: "FROM STUCK TO POWER"
+- Font: Inter Bold, 48px
+- Color: White (#FFFFFF)
+- Shadow: Subtle drop shadow for readability
+- Position: Bottom center
+- Letter spacing: -0.5px
+
+FIRE GRADIENT ACCENT:
+- Thin line (4px) at top of image
+- Gradient: #C84A00 → #FF6A00
+- Full width
+
+BRANDING:
+- IGNITE logo: Top right corner, small (80x80px)
+- White or fire gradient color
+- Adequate exclusion zone (20px margin)
+
+TEXT COVERAGE:
+- Ensure text covers <20% of image (Facebook requirement)
+- Text overlay is bottom third only
+- Use Facebook's text overlay tool to verify
+
+VISUAL STYLE:
+- Professional, minimal, modern
+- High contrast (readable on mobile)
+- No stock photo feel (use illustration or custom graphics)
+- Clean, uncluttered
+- Conveys transformation journey visually
+
+---
+
+CTA BUTTON:
+Type: Learn More
+Text: "Decode Your Pattern"
+Color: Fire gradient (if platform allows) or default blue
+
+---
+
+TARGETING SPECIFICATIONS:
+
+AUDIENCE DETAILS:
+- Age: 25-55
+- Gender: All
+- Location: United States, Canada, United Kingdom, Australia
+- Language: English (all)
+
+DETAILED TARGETING (Interests):
+- Personal development
+- Career development
+- Self-improvement
+- Leadership development
+- Entrepreneurship
+- Business coaching
+- Life coaching
+- Professional development
+- Career coaching
+- Tony Robbins
+- Brendon Burchard
+- High Performance Academy
+
+BEHAVIORS:
+- Small business owners
+- Engaged shoppers (purchase behavior)
+- High earners (income >$75K)
+- Professionals/executives
+
+EXCLUDE:
+- Current IGNITE members (custom audience)
+- Anyone who completed Pain to Power Decoder in last 90 days (custom audience)
+
+PLACEMENT:
+- Automatic placements (recommended for testing)
+- OR manually select:
+  * Facebook Feed
+  * Instagram Feed
+  * Facebook Stories
+  * Instagram Stories
+  * Facebook Reels
+  * Instagram Reels
+
+OPTIMIZATION:
+- Conversion location: Website
+- Conversion event: Lead (form submission on landing page)
+- Pixel: Install Facebook Pixel on landing page for tracking
+
+---
+
+CAMPAIGN SETUP (Facebook Ads Manager):
+
+Campaign Name: IGNITE-LM10-PainToPower-V1-PainRecognition
+Campaign Objective: Traffic (or Lead Generation if using Meta lead forms)
+Budget: $100-150/week (initial testing)
+Bid Strategy: Lowest cost
+Schedule: Continuous
+
+Ad Set Name: Cold-US-CA-UK-AU-25-55-PersonalDev
+Budget: $100-150/week
+Start Date: [Launch date]
+End Date: Ongoing (or set end date for testing period)
+
+Ad Name: Stuck-Pattern-Decoder-V1
+
+---
+
+PERFORMANCE BENCHMARKS:
+
+SUCCESS METRICS:
+- CTR: 2.8-3.8% (click-through rate)
+- CPC: $0.45-$0.75 (cost per click)
+- CPL: $2-4 (cost per lead, assuming 28-35% landing page conversion)
+- Relevance Score: 7+ (Facebook ad relevance)
+- Landing page conversion: 28-35%
+
+OPTIMIZATION TRIGGERS:
+- If CTR < 2%: Test new creative (image) or headline
+- If CPC > $1: Narrow targeting or test different audience
+- If CPL > $5: Improve landing page conversion or test different ad angle
+- If Relevance Score < 5: Ad/audience mismatch, revise targeting
+
+A/B TESTING ROADMAP:
+- Week 1-2: Run V1 as-is, gather baseline data
+- Week 3: Test headline variation ("Finally Understand Why You're Stuck")
+- Week 4: Test body copy variation (emphasize speed: "3 Days to Clarity")
+- Week 5: Test image variation (before/after split screen)
+
+═══════════════════════════════════════════════════════════════════════
+AD VARIATION #2: CURIOSITY + PROMISE ANGLE
+Best For: Warm audiences, solution-aware
+Expected CTR: 3.2-4.2%
+Expected CPC: $0.55-$0.85
+═══════════════════════════════════════════════════════════════════════
+
+HEADLINE (60 characters max):
+"What's Your Stuck Pattern? (Take The 5-Min Assessment)"
+Character count: 58 ✓
+
+BODY COPY (125 characters max):
+"Not all stuck is the same. Identify your exact pattern—then get your personal escape route. Free 3-day decoder."
+Character count: 113 ✓
+
+---
+
+IMAGE SPECIFICATIONS FOR CANVA:
+
+DIMENSIONS: 1200 x 628 pixels (Facebook feed format)
+
+DESIGN LAYOUT:
+- Background: Fire gradient (#C84A00 → #FF6A00)
+- Gradient direction: Diagonal (top-left to bottom-right)
+- Smooth, professional gradient (no harsh transitions)
+
+CENTER FOCAL POINT:
+- Visual: Large question mark icon
+  * Style: Clean, minimal, modern
+  * Color: White (#FFFFFF) with subtle shadow
+  * Size: 300x400px (prominent but balanced)
+  * Position: Center, slightly offset left
+  * Thickness: Bold, geometric design
+  * Conveys: "discovery" and "curiosity"
+
+BOTTOM SECTION:
+- Visual: 5 small circles in a row
+  * Each circle: 60px diameter
+  * Color: White outline, transparent fill
+  * Spacing: 20px between circles
+  * Position: Bottom third, centered horizontally
+  * Represents: 5 different stuck patterns
+  * One circle could be filled (fire gradient) to show "which one are you?"
+
+TEXT OVERLAY:
+- Text: "Which One Are You?"
+- Font: Inter Bold, 42px
+- Color: White (#FFFFFF)
+- Position: Below question mark, above circles
+- Center aligned
+- Letter spacing: -0.25px
+- Text shadow: Subtle for readability
+
+BRANDING:
+- IGNITE logo: Top left corner (inverted to white for visibility on gradient)
+- Size: 80x80px
+- Exclusion zone: 20px margin
+
+VISUAL STYLE:
+- Modern, direct, engaging
+- High contrast (white on fire gradient)
+- Clean, minimal (not cluttered)
+- Mobile-friendly (large central element)
+- Conveys: "assessment" and "personalization"
+
+TEXT COVERAGE:
+- Text: ~15% of image (well under 20% limit)
+
+---
+
+CTA BUTTON:
+Type: Learn More
+Text: "Reveal Your Pattern"
+Color: White or contrasting color
+
+---
+
+TARGETING SPECIFICATIONS:
+
+AUDIENCE DETAILS:
+- Age: 28-50 (more narrow, higher intention)
+- Gender: All
+- Location: United States, Canada
+- Language: English (all)
+
+DETAILED TARGETING (Interests):
+- Career coaching
+- Personal transformation
+- Leadership development
+- Executive coaching
+- High Performance Academy
+- Business transformation
+- Professional coaching
+- Strategic planning
+
+BEHAVIORS:
+- Engaged with coaching content (based on activity)
+- High earners ($100K+)
+- Business decision makers
+- Managers/executives
+
+EXCLUDE:
+- Current IGNITE members (custom audience)
+- Anyone who completed Pain to Power Decoder in last 90 days
+
+LOOKALIKE AUDIENCE (If available):
+- 1% lookalike of IGNITE members or Pain Decoder completers
+- This creates a warm audience of similar people
+
+PLACEMENT:
+- Automatic placements (recommended)
+
+---
+
+CAMPAIGN SETUP (Facebook Ads Manager):
+
+Campaign Name: IGNITE-LM10-PainToPower-V2-CuriosityPromise
+Campaign Objective: Traffic
+Budget: $100-150/week (initial testing)
+Bid Strategy: Lowest cost
+Schedule: Continuous
+
+Ad Set Name: Warm-US-CA-28-50-Coaching
+Budget: $100-150/week
+
+Ad Name: Pattern-Assessment-V2
+
+---
+
+PERFORMANCE BENCHMARKS:
+
+SUCCESS METRICS:
+- CTR: 3.2-4.2%
+- CPC: $0.55-$0.85
+- CPL: $2.50-4.50
+- Relevance Score: 8+
+- Landing page conversion: 30-38% (higher for warm audience)
+
+═══════════════════════════════════════════════════════════════════════
+AD VARIATION #3: TRANSFORMATION + URGENCY ANGLE
+Best For: Hot/warm audiences, high-intent buyers
+Expected CTR: 3.5-4.8%
+Expected CPC: $0.65-$0.95
+═══════════════════════════════════════════════════════════════════════
+
+HEADLINE (60 characters max):
+"From Stuck to Power in 3 Days (New Decoder Launch)"
+Character count: 55 ✓
+
+BODY COPY (125 characters max):
+"Assessment → Teaching → Action Plan. See your escape route in 3 days. It's free. You'll be surprised what you discover."
+Character count: 123 ✓
+
+---
+
+IMAGE SPECIFICATIONS FOR CANVA:
+
+DIMENSIONS: 1200 x 628 pixels (Facebook feed format)
+
+DESIGN LAYOUT:
+- Background: Charcoal (#121212)
+- Clean, high-contrast design
+
+LEFT SIDE (45% of image):
+- Visual: "BEFORE" representation
+  * Closed door or barrier (dark gray #2a2a2a)
+  * Limited space, confined
+  * Muted, restricted visual
+  * Label: "BEFORE" (small, top-left)
+  * Color: Gray/charcoal tones
+  * Conveys: "stuck" state
+
+RIGHT SIDE (45% of image):
+- Visual: "AFTER" representation
+  * Open door or open space
+  * Bright, expansive
+  * Clear pathway forward
+  * Label: "AFTER" (small, top-right)
+  * Color: Fire gradient accents, white space
+  * Conveys: "power" state
+
+CENTER (10% of image):
+- Visual: 3-step pathway connecting left to right
+  * Three numbered steps: 1, 2, 3
+  * Style: Circles with numbers inside
+  * Color: Fire gradient (#C84A00 → #FF6A00)
+  * Size: 80px diameter each
+  * Spacing: 20px between
+  * Arranged horizontally or in slight arc
+  * Conveys: "transformation process"
+
+BOTTOM SECTION:
+- Text overlay: "3-DAY TRANSFORMATION"
+- Font: Inter Bold, 48px
+- Color: Fire gradient (if possible) or white
+- Position: Bottom center
+- Text stroke: Dark outline for readability
+- Letter spacing: -0.5px
+
+VISUAL ELEMENTS:
+- Subtle arrow from left to right (optional)
+- Dotted path connecting the 3 steps (optional)
+- High contrast for mobile readability
+
+BRANDING:
+- IGNITE logo: Top center or top right
+- Color: White or fire gradient
+- Size: 80x80px
+
+VISUAL STYLE:
+- Before/after transformation style
+- High-contrast, motivating
+- Clear visual journey (left → right)
+- Professional but dynamic
+- Conveys: "transformation" and "speed"
+
+TEXT COVERAGE:
+- Text: ~18% of image (under 20% limit)
+
+---
+
+CTA BUTTON:
+Type: Learn More
+Text: "Get Your Decoder"
+Color: Fire gradient or default
+
+---
+
+TARGETING SPECIFICATIONS:
+
+AUDIENCE DETAILS:
+- Age: 30-55 (highest-intent demographic)
+- Gender: All
+- Location: United States (most focused)
+- Language: English (all)
+
+DETAILED TARGETING (Interests):
+- Executive coaching
+- High-performance coaching
+- Business transformation
+- Leadership training
+- Strategic leadership
+- Organizational development
+- High Performance Academy (Brendon Burchard)
+
+BEHAVIORS:
+- High-value customers (purchase behavior $500+)
+- Business decision makers
+- Executives/senior management
+- High earners ($150K+)
+
+LOOKALIKE AUDIENCES (Recommended):
+- 1% lookalike of IGNITE enrollees (if available)
+- 2% lookalike of Pain Decoder completers who booked calls
+
+EXCLUDE:
+- Current IGNITE members
+- Anyone who completed decoder in last 90 days
+
+PLACEMENT:
+- Facebook Feed (priority)
+- Instagram Feed (secondary)
+- Stories (if performing well)
+
+---
+
+CAMPAIGN SETUP (Facebook Ads Manager):
+
+Campaign Name: IGNITE-LM10-PainToPower-V3-Transformation
+Campaign Objective: Traffic
+Budget: $100-150/week (initial testing)
+Bid Strategy: Lowest cost (or target cost if you have historical data)
+Schedule: Continuous
+
+Ad Set Name: Hot-US-30-55-Executive
+Budget: $100-150/week
+
+Ad Name: 3Day-Transformation-V3
+
+---
+
+PERFORMANCE BENCHMARKS:
+
+SUCCESS METRICS:
+- CTR: 3.5-4.8%
+- CPC: $0.65-$0.95
+- CPL: $3-5
+- Relevance Score: 8-10
+- Landing page conversion: 32-40% (highest intent)
+
+═══════════════════════════════════════════════════════════════════════
+FACEBOOK PIXEL SETUP & TRACKING
+═══════════════════════════════════════════════════════════════════════
+
+ESSENTIAL PIXEL EVENTS:
+
+1. PageView (automatic):
+   - Fires when landing page loads
+   - Tracks all visitors from ads
+
+2. Lead (custom event):
+   - Fires when form is submitted
+   - Tracks conversions
+   - Set up on landing page form submission
+
+3. ViewContent (optional):
+   - Fires when key sections viewed (e.g., FAQ section scrolled to)
+   - Tracks engagement
+
+PIXEL INSTALLATION:
+
+1. Create Facebook Pixel in Events Manager
+2. Install Pixel code in <head> of landing page HTML
+3. Add Lead event to form submission:
+
+```javascript
+// Add to form submission function
+fbq('track', 'Lead', {
+  content_name: 'Pain to Power Decoder',
+  content_category: 'Lead Magnet',
+  value: 0,
+  currency: 'USD'
+});
+```
+
+4. Test pixel with Facebook Pixel Helper Chrome extension
+
+CUSTOM CONVERSIONS:
+
+Create custom conversion for:
+- "Decoder Form Submission" (Lead event)
+- URL contains: [your landing page URL]
+- Use for ad optimization
+
+═══════════════════════════════════════════════════════════════════════
+CUSTOM AUDIENCES FOR RETARGETING
+═══════════════════════════════════════════════════════════════════════
+
+CREATE THESE AUDIENCES:
+
+1. Landing Page Visitors (No Conversion):
+   - Visited landing page but didn't submit form
+   - Timeframe: 14 days
+   - Use for: Retargeting with urgency messaging
+
+2. Form Submitters (Decoder Completers):
+   - Completed form on landing page
+   - Timeframe: 30 days
+   - Use for: IGNITE enrollment ads
+
+3. Email Openers (High Engagement):
+   - Opened 2+ emails in sequence
+   - Timeframe: 14 days
+   - Use for: IGNITE enrollment ads with higher budget
+
+4. Video Watchers (If using video):
+   - Watched 50%+ of video on landing page
+   - Timeframe: 14 days
+   - Use for: Retargeting with "finish what you started" messaging
+
+═══════════════════════════════════════════════════════════════════════
+AD TESTING & OPTIMIZATION SCHEDULE
+═══════════════════════════════════════════════════════════════════════
+
+WEEK 1-2: BASELINE DATA COLLECTION
+- Run all 3 variations simultaneously
+- Equal budget ($100-150 each)
+- Gather data (minimum 1,000 impressions per ad)
+- Track CTR, CPC, CPL, conversion rate
+
+WEEK 3: INITIAL OPTIMIZATION
+- Identify best performer (highest CTR + lowest CPL)
+- Double budget on winner
+- Keep testing other variations at lower budget
+- Create first round of variations (new headlines/images)
+
+WEEK 4: SCALING
+- Best performer gets 50% of budget
+- Top 2 get remaining 50% split
+- Pause worst performer (if CTR <2% or CPL >$6)
+- Test new audiences (lookalikes, different interests)
+
+WEEK 5-8: REFINEMENT
+- Create new variations based on learnings
+- Test different angles (benefits vs. transformation vs. speed)
+- Test seasonal messaging (if applicable)
+- Expand to new placements (Stories, Reels if not already)
+- Test different formats (carousel, video if not already)
+
+ONGOING:
+- Refresh creative every 4-6 weeks (combat ad fatigue)
+- Test new audiences quarterly
+- Monitor frequency (keep <3 for best performance)
+- A/B test continuously (always have 2+ variations running)
+
+═══════════════════════════════════════════════════════════════════════
+BUDGET SCALING STRATEGY
+═══════════════════════════════════════════════════════════════════════
+
+PHASE 1: TESTING ($300-500/week)
+- Goal: Find winning variation
+- Timeline: 2-4 weeks
+- Expected results: 100-150 leads/week at $2-4 CPL
+
+PHASE 2: SCALING ($800-1,200/week)
+- Goal: Scale winning variation
+- Timeline: Weeks 5-8
+- Expected results: 250-400 leads/week at $2.50-4.50 CPL
+
+PHASE 3: OPTIMIZATION ($1,500-2,500/week)
+- Goal: Maximize ROI
+- Timeline: Weeks 9+
+- Expected results: 500-800 leads/week at $2.50-5 CPL
+- Monitor: ROAS (return on ad spend from IGNITE enrollments)
+
+SCALING RULES:
+- Never increase budget >20% at once (algorithm needs time to adjust)
+- Wait 3-5 days between budget increases
+- If CPL increases >30% after scaling, reduce budget
+- Monitor relevance score (should stay >7)
+- Refresh creative when frequency >3
+
+═══════════════════════════════════════════════════════════════════════
+CREATIVE ASSETS CHECKLIST
+═══════════════════════════════════════════════════════════════════════
+
+TO CREATE IN CANVA (or design tool):
+
+☐ Ad Variation 1 Image (1200x628px) - Pain Recognition
+☐ Ad Variation 2 Image (1200x628px) - Curiosity + Promise
+☐ Ad Variation 3 Image (1200x628px) - Transformation + Urgency
+☐ Instagram Story Version (1080x1920px) - All 3 variations
+☐ Facebook Story Version (1080x1920px) - All 3 variations
+☐ Square Version (1080x1080px) - For feed placements (optional)
+
+DESIGN TEMPLATES:
+- Use Canva Pro for brand kit (upload IGNITE colors, fonts, logo)
+- Save all 3 variations as templates for easy editing
+- Create variations for A/B testing (different headlines, backgrounds)
+
+EXPORT SETTINGS:
+- Format: PNG or JPG
+- Quality: High (not maximum, to keep file size reasonable)
+- File size: <1MB per image (for fast loading)
+
+═══════════════════════════════════════════════════════════════════════
+COMPLIANCE & BEST PRACTICES
+═══════════════════════════════════════════════════════════════════════
+
+FACEBOOK AD POLICIES:
+
+☐ No "before/after" weight loss claims (not applicable here)
+☐ No misleading claims (avoid "guaranteed results")
+☐ Text overlay <20% of image (use Text Overlay tool to check)
+☐ Landing page matches ad promise (decoder delivers what ad promises)
+☐ Privacy policy on landing page (required)
+☐ No personal attributes targeting (can't target based on personal hardships)
+
+BEST PRACTICES:
+
+☐ Test on mobile first (80% of users will see on mobile)
+☐ Include value proposition in first 125 characters (preview text)
+☐ Use strong, clear CTA ("Decode Your Pattern" not "Click Here")
+☐ Ensure landing page loads <3 seconds
+☐ A/B test continuously (never stop testing)
+☐ Monitor ad fatigue (frequency >3 = refresh creative)
+☐ Respond to comments on ads (engagement boosts reach)
+
+═══════════════════════════════════════════════════════════════════════
+PERFORMANCE DASHBOARD (Track These KPIs)
+═══════════════════════════════════════════════════════════════════════
+
+AD PLATFORM METRICS (Facebook):
+- Impressions
+- Reach
+- CTR (Click-Through Rate)
+- CPC (Cost Per Click)
+- Relevance Score
+- Frequency
+
+LANDING PAGE METRICS (Google Analytics):
+- Landing page views
+- Bounce rate
+- Form submission rate
+- Time on page
+- Mobile vs. desktop conversions
+
+FUNNEL METRICS:
+- Ad click → Landing page view rate (should be >90%)
+- Landing page view → Form submission rate (target: 28-35%)
+- Form submission → Email 1 open rate (target: 50%+)
+- Email sequence completion rate (target: 65-75%)
+- Email 3 → Strategy call booking rate (target: 28-32%)
+
+BUSINESS METRICS:
+- Cost per lead (CPL): Target $2-4
+- Lead to strategy call rate: Target 28-32%
+- Strategy call to enrollment rate: Target 60-70%
+- Cost per acquisition (CPA): Track ad spend → IGNITE enrollment
+- ROAS (Return on Ad Spend): Revenue ÷ Ad Spend (target: 3-5X minimum)
+
+═══════════════════════════════════════════════════════════════════════
+END FACEBOOK ADS DOCUMENTATION
+═══════════════════════════════════════════════════════════════════════
