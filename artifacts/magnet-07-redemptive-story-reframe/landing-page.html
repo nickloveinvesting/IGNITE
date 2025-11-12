@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn Your Pain Into Your Superpower | Redemptive Story Reframe</title>
+    <meta name="description" content="Transform your biggest failure into your most powerful story. Download the free Redemptive Story Reframe worksheet and turn shame into strength.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2C3539;
+            background: #FFFFFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .narrow-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2C3539 0%, #1a1f22 100%);
+            color: #FFFFFF;
+            padding: 80px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255, 77, 0, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 .highlight {
+            color: #FF4D00;
+        }
+
+        .hero .subheadline {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: #FF4D00;
+            color: #FFFFFF;
+            padding: 20px 48px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px rgba(255, 77, 0, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #e64500;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 77, 0, 0.4);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            border: 2px solid #FF4D00;
+            color: #FF4D00;
+            box-shadow: none;
+        }
+
+        .cta-button-secondary:hover {
+            background: #FF4D00;
+            color: #FFFFFF;
+        }
+
+        /* Trust Badge */
+        .trust-badge {
+            margin-top: 24px;
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #2C3539;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            margin-bottom: 48px;
+            color: #666;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .pain-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .pain-point {
+            background: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #FF4D00;
+        }
+
+        .pain-point h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #2C3539;
+        }
+
+        .pain-point p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Truth Section */
+        .truth-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+            text-align: center;
+        }
+
+        .truth-box {
+            background: linear-gradient(135deg, #FF4D00 0%, #ff6a26 100%);
+            color: #FFFFFF;
+            padding: 48px;
+            border-radius: 16px;
+            max-width: 800px;
+            margin: 48px auto;
+            box-shadow: 0 8px 24px rgba(255, 77, 0, 0.2);
+        }
+
+        .truth-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .truth-box p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        /* Worksheet Preview */
+        .worksheet-section {
+            padding: 80px 20px;
+            background: #f8f9fa;
+        }
+
+        .prompts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .prompt-card {
+            background: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid #FF4D00;
+        }
+
+        .prompt-number {
+            display: inline-block;
+            background: #FF4D00;
+            color: #FFFFFF;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .prompt-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #2C3539;
+        }
+
+        .prompt-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Testimonial Section */
+        .testimonial-section {
+            padding: 80px 20px;
+            background: #2C3539;
+            color: #FFFFFF;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #FF4D00;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            padding: 80px 20px;
+            background: #FFFFFF;
+        }
+
+        .benefits-list {
+            max-width: 700px;
+            margin: 48px auto;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: start;
+            margin-bottom: 24px;
+            padding: 24px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .benefit-icon {
+            color: #FF4D00;
+            font-size: 1.5rem;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .benefit-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+            color: #2C3539;
+        }
+
+        .benefit-content p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #FF4D00 0%, #ff6a26 100%);
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.75rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .cta-button {
+            background: #FFFFFF;
+            color: #FF4D00;
+        }
+
+        .cta-section .cta-button:hover {
+            background: #f0f0f0;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 20px;
+            background: #2C3539;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+
+            .hero .subheadline {
+                font-size: 1.15rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .cta-button {
+                padding: 16px 32px;
+                font-size: 1.1rem;
+            }
+
+            .pain-points,
+            .prompts-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content narrow-container">
+            <h1>Turn Your <span class="highlight">Pain</span> Into Your <span class="highlight">Superpower</span></h1>
+            <p class="subheadline">Your past isn't a prison. It's proof you can overcome anything. Transform your biggest failure into your most powerful story.</p>
+            <a href="#download" class="cta-button">Download the Free Worksheet</a>
+            <p class="trust-badge">🔒 100% Free • No Credit Card • Instant Access</p>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">You Carry Shame From Your Past</h2>
+            <p class="section-subtitle">Failed business. Lost money. Broken relationships. Public humiliation. You think your past disqualifies you from success.</p>
+
+            <div class="pain-points">
+                <div class="pain-point">
+                    <h3>😔 You Hide Your Story</h3>
+                    <p>You've been through something painful—bankruptcy, addiction, divorce, failure—and you're ashamed of it. You think if people knew the truth, they'd judge you.</p>
+                </div>
+                <div class="pain-point">
+                    <h3>😞 You Feel Disqualified</h3>
+                    <p>You see other entrepreneurs with "perfect" backstories and think, "Who am I to teach anyone anything? Look at my mess." Your past feels like proof you're not qualified.</p>
+                </div>
+                <div class="pain-point">
+                    <h3>😢 You're Stuck in Shame</h3>
+                    <p>Every time you try to move forward, the weight of your past pulls you back. You can't escape what happened. It defines you. You're trapped in a story that feels unchangeable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Truth Section -->
+    <section class="truth-section">
+        <div class="narrow-container">
+            <h2 class="section-title">Here's The Truth</h2>
+            <div class="truth-box">
+                <h2>Your Past Doesn't Disqualify You.<br>It Qualifies You.</h2>
+                <p>Every successful person has a redemptive story. Steve Jobs was fired. Sara Blakely failed the LSAT. Walt Disney went bankrupt. Your failure isn't the end—it's the beginning of your comeback.</p>
+                <p><strong>The thing you're most ashamed of? That's your superpower.</strong></p>
+            </div>
+            <p class="section-subtitle">The Redemptive Story Reframe helps you transform shame into strength, failure into fuel, and your mess into your message.</p>
+        </div>
+    </section>
+
+    <!-- Worksheet Preview Section -->
+    <section class="worksheet-section">
+        <div class="container">
+            <h2 class="section-title">5 Prompts That Reframe Everything</h2>
+            <p class="section-subtitle">In 60 minutes, you'll transform your painful past into your most powerful marketing asset.</p>
+
+            <div class="prompts-grid">
+                <div class="prompt-card">
+                    <div class="prompt-number">1</div>
+                    <h3>What Painful Experience Shaped You?</h3>
+                    <p>Identify the specific event or season that you've been carrying as shame. Name it. Own it.</p>
+                </div>
+                <div class="prompt-card">
+                    <div class="prompt-number">2</div>
+                    <h3>What Did You Learn?</h3>
+                    <p>Extract the wisdom buried in the pain. What did this experience teach you that success never could?</p>
+                </div>
+                <div class="prompt-card">
+                    <div class="prompt-number">3</div>
+                    <h3>How Has It Made You Stronger?</h3>
+                    <p>Identify the specific strengths, skills, and resilience you developed through this experience.</p>
+                </div>
+                <div class="prompt-card">
+                    <div class="prompt-number">4</div>
+                    <h3>Who Does This Wisdom Help You Serve?</h3>
+                    <p>Discover how your pain points to your purpose. Who needs what you learned?</p>
+                </div>
+                <div class="prompt-card">
+                    <div class="prompt-number">5</div>
+                    <h3>Your Redemptive Story (The Reframe)</h3>
+                    <p>Write your complete redemptive narrative using the 5-part framework. This becomes your signature story.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title" style="color: #FFFFFF;">What Others Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-quote">"I spent 10 years hiding my bankruptcy. This worksheet helped me reframe it as the exact experience that taught me financial wisdom. Now it's the foundation of my coaching business."</p>
+                    <p class="testimonial-author">— Sarah M., Financial Coach</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"I thought my addiction recovery was something to hide. This tool showed me it's actually my unfair advantage. My story is now the most powerful part of my marketing."</p>
+                    <p class="testimonial-author">— Marcus T., Recovery Coach</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-quote">"In 60 minutes, I transformed 15 years of shame into my signature story. This isn't just therapy—it's strategy. My entire brand is built on this now."</p>
+                    <p class="testimonial-author">— Jennifer L., Life Coach</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">What You'll Get</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-content">
+                        <h3>The 5-Prompt Redemptive Story Framework</h3>
+                        <p>A proven, step-by-step process to extract your redemptive narrative and transform shame into strength in 60 minutes.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-content">
+                        <h3>Guided Reframing Questions</h3>
+                        <p>Powerful questions that help you see your past through a completely different lens—from victim to hero, from shame to wisdom.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-content">
+                        <h3>Your Complete Signature Story</h3>
+                        <p>By the end, you'll have a written redemptive narrative you can use in your marketing, website, social media, and sales conversations.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-content">
+                        <h3>Video Teaching: How to Use Your Story</h3>
+                        <p>Learn exactly how to leverage your redemptive story to build trust, authority, and connection with your ideal clients.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <div class="benefit-content">
+                        <h3>Real Examples from Successful Entrepreneurs</h3>
+                        <p>See how Steve Jobs, Sara Blakely, Walt Disney, and Oprah turned their biggest failures into their greatest strengths.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta-section" id="download">
+        <div class="narrow-container">
+            <h2>Your Story Isn't Over.<br>It's Just Beginning.</h2>
+            <p>Download the Redemptive Story Reframe worksheet and transform your pain into your superpower in the next 60 minutes.</p>
+
+            <!-- Email Capture Form -->
+            <form style="max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Enter your email" required style="width: 100%; padding: 16px; font-size: 1.1rem; border: none; border-radius: 8px; margin-bottom: 16px;">
+                <button type="submit" class="cta-button" style="width: 100%;">Get Instant Access (Free)</button>
+            </form>
+
+            <p class="trust-badge" style="margin-top: 24px;">🔒 Your privacy is protected. No spam, ever.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IGNITE. All rights reserved.</p>
+            <p>Turn your limiting beliefs into limitless possibilities.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
